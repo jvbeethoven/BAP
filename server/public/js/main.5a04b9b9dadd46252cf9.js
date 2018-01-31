@@ -6566,7 +6566,7 @@ module.exports = focusNode;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(58);
 /* unused harmony reexport HashRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(34);
-/* unused harmony reexport Link */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(60);
 /* unused harmony reexport MemoryRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(63);
@@ -6574,15 +6574,15 @@ module.exports = focusNode;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(66);
 /* unused harmony reexport Prompt */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(68);
-/* unused harmony reexport Redirect */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(35);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(19);
 /* unused harmony reexport Router */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(74);
 /* unused harmony reexport StaticRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(76);
-/* unused harmony reexport Switch */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(78);
 /* unused harmony reexport matchPath */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(79);
@@ -7195,7 +7195,7 @@ var init = function init() {
           lineNumber: 18
         }
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Route */], { component: __WEBPACK_IMPORTED_MODULE_2__containers_App__["a" /* default */], __source: {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["d" /* Route */], { component: __WEBPACK_IMPORTED_MODULE_2__containers_App__["a" /* default */], __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         }
@@ -24463,7 +24463,9 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router_dom__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Add__ = __webpack_require__(91);
 var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/App.jsx';
+
 
 
 
@@ -24480,13 +24482,13 @@ var App = function App(_ref) {
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       }
     },
     process.env.NODE_ENV !== 'production' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 15
       }
     }) : null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -24494,7 +24496,7 @@ var App = function App(_ref) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -24502,7 +24504,7 @@ var App = function App(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 18
           }
         },
         'Hello, ',
@@ -24514,15 +24516,96 @@ var App = function App(_ref) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 21
         }
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Route */], {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'header',
+        { className: 'header', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Link */],
+          { className: 'header-link', to: '/', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 23
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            { className: 'header-home', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              }
+            },
+            'Home'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'header-title', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 26
+            }
+          },
+          'Toekomstmuziek'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'header-button', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 27
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Link */],
+            { className: 'header-link', to: '/Add', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 27
+              }
+            },
+            ' + '
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_4_react_router_dom__["e" /* Switch */],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
+          exact: true, path: '/',
+          component: __WEBPACK_IMPORTED_MODULE_5__Home__["a" /* default */],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 30
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
+          exact: true, path: '/Add',
+          component: __WEBPACK_IMPORTED_MODULE_6__Add__["a" /* default */],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["c" /* Redirect */], { to: '/', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 42
+          }
+        })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
         exact: true, path: '/',
         component: __WEBPACK_IMPORTED_MODULE_5__Home__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 44
         }
       })
     )
@@ -26854,7 +26937,7 @@ Prompt.contextTypes = {
 // Written in this round about way for babel-transform-imports
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
 /* 69 */
@@ -27987,7 +28070,7 @@ StaticRouter.childContextTypes = {
 // Written in this round about way for babel-transform-imports
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
 /* 77 */
@@ -28266,7 +28349,9 @@ Home.displayName = 'Home';
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx__ = __webpack_require__(16);
-var _desc, _value, _class, _descriptor;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_Card__ = __webpack_require__(88);
+var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4;
 
 function _initDefineProp(target, property, descriptor, context) {
   if (!descriptor) return;
@@ -28315,14 +28400,68 @@ function _initializerWarningHelper(descriptor, context) {
 
 
 
+
+
 var Store = (_class = function Store() {
+  var _this = this;
+
   _classCallCheck(this, Store);
 
   _initDefineProp(this, 'name', _descriptor, this);
+
+  _initDefineProp(this, 'cards', _descriptor2, this);
+
+  _initDefineProp(this, 'dreams', _descriptor3, this);
+
+  this.maxDreams = 5;
+
+  this.init = function () {
+    __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__["a" /* default */].select().then(function (_ref) {
+      var cards = _ref.cards;
+
+      _this._add.apply(_this, cards);
+    });
+  };
+
+  this.add = function (content) {
+    __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__["a" /* default */].insert(content).then(function (card) {
+      return _this._add(card);
+    });
+  };
+
+  _initDefineProp(this, '_add', _descriptor4, this);
+
+  this.init();
 }, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'name', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return 'toekomstmuziek';
+  }
+}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'cards', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    return ['1', '2', '3', '4', '5'];
+  }
+}), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'dreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    return ['kids', 'love', 'health', 'car', 'house', 'job', 'travel'];
+  }
+}), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, '_add', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    var _this2 = this;
+
+    return function () {
+      for (var _len = arguments.length, cards = Array(_len), _key = 0; _key < _len; _key++) {
+        cards[_key] = arguments[_key];
+      }
+
+      cards.forEach(function (c) {
+
+        _this2.cards.push(new __WEBPACK_IMPORTED_MODULE_2__models_Card__["a" /* default */](c));
+      });
+    };
   }
 })), _class);
 
@@ -28336,6 +28475,751 @@ if (process.env.NODE_ENV !== 'production') {
 /* harmony default export */ __webpack_exports__["a"] = (store);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(2)))
 
+/***/ }),
+/* 85 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__);
+
+
+var url = '/api/cards';
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+
+  select: function select() {
+    return __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default()(url + '?isActive=true').then(function (r) {
+      return r.json();
+    });
+  },
+
+  insert: function insert(email, message, informationId, dreamsId, personId) {
+    var method = 'POST';
+    var body = new FormData();
+    body.append('email', email);
+    body.append('message', message);
+    body.append('informationId', informationId);
+    body.append('dreamsId', dreamsId);
+    body.append('personId', personId);
+
+    return __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default()(url, { method: method, body: body }).then(function (r) {
+      return r.json();
+    });
+  }
+
+});
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// the whatwg-fetch polyfill installs the fetch() function
+// on the global object (window or self)
+//
+// Return that as the export for use in Webpack, Browserify etc.
+__webpack_require__(87);
+module.exports = self.fetch.bind(self);
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports) {
+
+(function(self) {
+  'use strict';
+
+  if (self.fetch) {
+    return
+  }
+
+  var support = {
+    searchParams: 'URLSearchParams' in self,
+    iterable: 'Symbol' in self && 'iterator' in Symbol,
+    blob: 'FileReader' in self && 'Blob' in self && (function() {
+      try {
+        new Blob()
+        return true
+      } catch(e) {
+        return false
+      }
+    })(),
+    formData: 'FormData' in self,
+    arrayBuffer: 'ArrayBuffer' in self
+  }
+
+  if (support.arrayBuffer) {
+    var viewClasses = [
+      '[object Int8Array]',
+      '[object Uint8Array]',
+      '[object Uint8ClampedArray]',
+      '[object Int16Array]',
+      '[object Uint16Array]',
+      '[object Int32Array]',
+      '[object Uint32Array]',
+      '[object Float32Array]',
+      '[object Float64Array]'
+    ]
+
+    var isDataView = function(obj) {
+      return obj && DataView.prototype.isPrototypeOf(obj)
+    }
+
+    var isArrayBufferView = ArrayBuffer.isView || function(obj) {
+      return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1
+    }
+  }
+
+  function normalizeName(name) {
+    if (typeof name !== 'string') {
+      name = String(name)
+    }
+    if (/[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(name)) {
+      throw new TypeError('Invalid character in header field name')
+    }
+    return name.toLowerCase()
+  }
+
+  function normalizeValue(value) {
+    if (typeof value !== 'string') {
+      value = String(value)
+    }
+    return value
+  }
+
+  // Build a destructive iterator for the value list
+  function iteratorFor(items) {
+    var iterator = {
+      next: function() {
+        var value = items.shift()
+        return {done: value === undefined, value: value}
+      }
+    }
+
+    if (support.iterable) {
+      iterator[Symbol.iterator] = function() {
+        return iterator
+      }
+    }
+
+    return iterator
+  }
+
+  function Headers(headers) {
+    this.map = {}
+
+    if (headers instanceof Headers) {
+      headers.forEach(function(value, name) {
+        this.append(name, value)
+      }, this)
+    } else if (Array.isArray(headers)) {
+      headers.forEach(function(header) {
+        this.append(header[0], header[1])
+      }, this)
+    } else if (headers) {
+      Object.getOwnPropertyNames(headers).forEach(function(name) {
+        this.append(name, headers[name])
+      }, this)
+    }
+  }
+
+  Headers.prototype.append = function(name, value) {
+    name = normalizeName(name)
+    value = normalizeValue(value)
+    var oldValue = this.map[name]
+    this.map[name] = oldValue ? oldValue+','+value : value
+  }
+
+  Headers.prototype['delete'] = function(name) {
+    delete this.map[normalizeName(name)]
+  }
+
+  Headers.prototype.get = function(name) {
+    name = normalizeName(name)
+    return this.has(name) ? this.map[name] : null
+  }
+
+  Headers.prototype.has = function(name) {
+    return this.map.hasOwnProperty(normalizeName(name))
+  }
+
+  Headers.prototype.set = function(name, value) {
+    this.map[normalizeName(name)] = normalizeValue(value)
+  }
+
+  Headers.prototype.forEach = function(callback, thisArg) {
+    for (var name in this.map) {
+      if (this.map.hasOwnProperty(name)) {
+        callback.call(thisArg, this.map[name], name, this)
+      }
+    }
+  }
+
+  Headers.prototype.keys = function() {
+    var items = []
+    this.forEach(function(value, name) { items.push(name) })
+    return iteratorFor(items)
+  }
+
+  Headers.prototype.values = function() {
+    var items = []
+    this.forEach(function(value) { items.push(value) })
+    return iteratorFor(items)
+  }
+
+  Headers.prototype.entries = function() {
+    var items = []
+    this.forEach(function(value, name) { items.push([name, value]) })
+    return iteratorFor(items)
+  }
+
+  if (support.iterable) {
+    Headers.prototype[Symbol.iterator] = Headers.prototype.entries
+  }
+
+  function consumed(body) {
+    if (body.bodyUsed) {
+      return Promise.reject(new TypeError('Already read'))
+    }
+    body.bodyUsed = true
+  }
+
+  function fileReaderReady(reader) {
+    return new Promise(function(resolve, reject) {
+      reader.onload = function() {
+        resolve(reader.result)
+      }
+      reader.onerror = function() {
+        reject(reader.error)
+      }
+    })
+  }
+
+  function readBlobAsArrayBuffer(blob) {
+    var reader = new FileReader()
+    var promise = fileReaderReady(reader)
+    reader.readAsArrayBuffer(blob)
+    return promise
+  }
+
+  function readBlobAsText(blob) {
+    var reader = new FileReader()
+    var promise = fileReaderReady(reader)
+    reader.readAsText(blob)
+    return promise
+  }
+
+  function readArrayBufferAsText(buf) {
+    var view = new Uint8Array(buf)
+    var chars = new Array(view.length)
+
+    for (var i = 0; i < view.length; i++) {
+      chars[i] = String.fromCharCode(view[i])
+    }
+    return chars.join('')
+  }
+
+  function bufferClone(buf) {
+    if (buf.slice) {
+      return buf.slice(0)
+    } else {
+      var view = new Uint8Array(buf.byteLength)
+      view.set(new Uint8Array(buf))
+      return view.buffer
+    }
+  }
+
+  function Body() {
+    this.bodyUsed = false
+
+    this._initBody = function(body) {
+      this._bodyInit = body
+      if (!body) {
+        this._bodyText = ''
+      } else if (typeof body === 'string') {
+        this._bodyText = body
+      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+        this._bodyBlob = body
+      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+        this._bodyFormData = body
+      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+        this._bodyText = body.toString()
+      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
+        this._bodyArrayBuffer = bufferClone(body.buffer)
+        // IE 10-11 can't handle a DataView body.
+        this._bodyInit = new Blob([this._bodyArrayBuffer])
+      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
+        this._bodyArrayBuffer = bufferClone(body)
+      } else {
+        throw new Error('unsupported BodyInit type')
+      }
+
+      if (!this.headers.get('content-type')) {
+        if (typeof body === 'string') {
+          this.headers.set('content-type', 'text/plain;charset=UTF-8')
+        } else if (this._bodyBlob && this._bodyBlob.type) {
+          this.headers.set('content-type', this._bodyBlob.type)
+        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8')
+        }
+      }
+    }
+
+    if (support.blob) {
+      this.blob = function() {
+        var rejected = consumed(this)
+        if (rejected) {
+          return rejected
+        }
+
+        if (this._bodyBlob) {
+          return Promise.resolve(this._bodyBlob)
+        } else if (this._bodyArrayBuffer) {
+          return Promise.resolve(new Blob([this._bodyArrayBuffer]))
+        } else if (this._bodyFormData) {
+          throw new Error('could not read FormData body as blob')
+        } else {
+          return Promise.resolve(new Blob([this._bodyText]))
+        }
+      }
+
+      this.arrayBuffer = function() {
+        if (this._bodyArrayBuffer) {
+          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)
+        } else {
+          return this.blob().then(readBlobAsArrayBuffer)
+        }
+      }
+    }
+
+    this.text = function() {
+      var rejected = consumed(this)
+      if (rejected) {
+        return rejected
+      }
+
+      if (this._bodyBlob) {
+        return readBlobAsText(this._bodyBlob)
+      } else if (this._bodyArrayBuffer) {
+        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))
+      } else if (this._bodyFormData) {
+        throw new Error('could not read FormData body as text')
+      } else {
+        return Promise.resolve(this._bodyText)
+      }
+    }
+
+    if (support.formData) {
+      this.formData = function() {
+        return this.text().then(decode)
+      }
+    }
+
+    this.json = function() {
+      return this.text().then(JSON.parse)
+    }
+
+    return this
+  }
+
+  // HTTP methods whose capitalization should be normalized
+  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT']
+
+  function normalizeMethod(method) {
+    var upcased = method.toUpperCase()
+    return (methods.indexOf(upcased) > -1) ? upcased : method
+  }
+
+  function Request(input, options) {
+    options = options || {}
+    var body = options.body
+
+    if (input instanceof Request) {
+      if (input.bodyUsed) {
+        throw new TypeError('Already read')
+      }
+      this.url = input.url
+      this.credentials = input.credentials
+      if (!options.headers) {
+        this.headers = new Headers(input.headers)
+      }
+      this.method = input.method
+      this.mode = input.mode
+      if (!body && input._bodyInit != null) {
+        body = input._bodyInit
+        input.bodyUsed = true
+      }
+    } else {
+      this.url = String(input)
+    }
+
+    this.credentials = options.credentials || this.credentials || 'omit'
+    if (options.headers || !this.headers) {
+      this.headers = new Headers(options.headers)
+    }
+    this.method = normalizeMethod(options.method || this.method || 'GET')
+    this.mode = options.mode || this.mode || null
+    this.referrer = null
+
+    if ((this.method === 'GET' || this.method === 'HEAD') && body) {
+      throw new TypeError('Body not allowed for GET or HEAD requests')
+    }
+    this._initBody(body)
+  }
+
+  Request.prototype.clone = function() {
+    return new Request(this, { body: this._bodyInit })
+  }
+
+  function decode(body) {
+    var form = new FormData()
+    body.trim().split('&').forEach(function(bytes) {
+      if (bytes) {
+        var split = bytes.split('=')
+        var name = split.shift().replace(/\+/g, ' ')
+        var value = split.join('=').replace(/\+/g, ' ')
+        form.append(decodeURIComponent(name), decodeURIComponent(value))
+      }
+    })
+    return form
+  }
+
+  function parseHeaders(rawHeaders) {
+    var headers = new Headers()
+    rawHeaders.split(/\r?\n/).forEach(function(line) {
+      var parts = line.split(':')
+      var key = parts.shift().trim()
+      if (key) {
+        var value = parts.join(':').trim()
+        headers.append(key, value)
+      }
+    })
+    return headers
+  }
+
+  Body.call(Request.prototype)
+
+  function Response(bodyInit, options) {
+    if (!options) {
+      options = {}
+    }
+
+    this.type = 'default'
+    this.status = 'status' in options ? options.status : 200
+    this.ok = this.status >= 200 && this.status < 300
+    this.statusText = 'statusText' in options ? options.statusText : 'OK'
+    this.headers = new Headers(options.headers)
+    this.url = options.url || ''
+    this._initBody(bodyInit)
+  }
+
+  Body.call(Response.prototype)
+
+  Response.prototype.clone = function() {
+    return new Response(this._bodyInit, {
+      status: this.status,
+      statusText: this.statusText,
+      headers: new Headers(this.headers),
+      url: this.url
+    })
+  }
+
+  Response.error = function() {
+    var response = new Response(null, {status: 0, statusText: ''})
+    response.type = 'error'
+    return response
+  }
+
+  var redirectStatuses = [301, 302, 303, 307, 308]
+
+  Response.redirect = function(url, status) {
+    if (redirectStatuses.indexOf(status) === -1) {
+      throw new RangeError('Invalid status code')
+    }
+
+    return new Response(null, {status: status, headers: {location: url}})
+  }
+
+  self.Headers = Headers
+  self.Request = Request
+  self.Response = Response
+
+  self.fetch = function(input, init) {
+    return new Promise(function(resolve, reject) {
+      var request = new Request(input, init)
+      var xhr = new XMLHttpRequest()
+
+      xhr.onload = function() {
+        var options = {
+          status: xhr.status,
+          statusText: xhr.statusText,
+          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
+        }
+        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL')
+        var body = 'response' in xhr ? xhr.response : xhr.responseText
+        resolve(new Response(body, options))
+      }
+
+      xhr.onerror = function() {
+        reject(new TypeError('Network request failed'))
+      }
+
+      xhr.ontimeout = function() {
+        reject(new TypeError('Network request failed'))
+      }
+
+      xhr.open(request.method, request.url, true)
+
+      if (request.credentials === 'include') {
+        xhr.withCredentials = true
+      }
+
+      if ('responseType' in xhr && support.blob) {
+        xhr.responseType = 'blob'
+      }
+
+      request.headers.forEach(function(value, name) {
+        xhr.setRequestHeader(name, value)
+      })
+
+      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit)
+    })
+  }
+  self.fetch.polyfill = true
+})(typeof self !== 'undefined' ? self : this);
+
+
+/***/ }),
+/* 88 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Card; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Card = function Card(_ref) {
+  var email = _ref.email,
+      message = _ref.message,
+      informationId = _ref.informationId,
+      dreamsId = _ref.dreamsId,
+      personId = _ref.personId,
+      _id = _ref._id,
+      created = _ref.created,
+      modified = _ref.modified,
+      isActive = _ref.isActive;
+
+  _classCallCheck(this, Card);
+
+  this.email = "";
+  this.message = "";
+  this.informationId = "";
+  this.dreamsId = "";
+  this.personId = "";
+  this.created = "";
+  this.modified = "";
+  this._id = "";
+  this.isActive = true;
+
+
+  this.email = email;
+  this.message = message;
+  this.informationId = informationId;
+  this.dreamsId = dreamsId;
+  this.personId = personId;
+  this._id = _id;
+  this.created = created;
+  this.isActive = isActive;
+  this.modified = modified;
+};
+
+
+
+/***/ }),
+/* 89 */,
+/* 90 */,
+/* 91 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react__ = __webpack_require__(15);
+var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/Add.jsx';
+
+
+
+var Add = function Add(_ref) {
+  var store = _ref.store;
+  var dreams = store.dreams,
+      cards = store.cards;
+
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+  };
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'section',
+    { className: 'createCard', __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'cardViz', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h1',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
+          }
+        },
+        '#toekomstmuziek'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'leftDreams', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 23
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              }
+            },
+            cards[0]
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            cards[1]
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              }
+            },
+            cards[2]
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'person', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 28
+            }
+          },
+          'person'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'rightDreams', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 29
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 30
+              }
+            },
+            cards[3]
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'p',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 31
+              }
+            },
+            cards[5]
+          )
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'form',
+      { className: 'cardOptions', onSubmit: handleSubmit, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        }
+      },
+      dreams.forEach(function (d) {
+        console.log(d);
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40
+          }
+        });
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'checkbox', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        }
+      })
+    )
+  );
+};
+
+Add.displayName = 'Add';
+Add.propTypes = {
+  store: __WEBPACK_IMPORTED_MODULE_1_mobx_react__["PropTypes"].observableObject.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"])('store')(Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["observer"])(Add)));
+//
+// export default Add;
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.9f7eca9a3d345a5b9c90.js.map
+//# sourceMappingURL=main.5a04b9b9dadd46252cf9.js.map

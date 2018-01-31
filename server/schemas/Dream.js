@@ -2,34 +2,16 @@ const Joi = require(`joi`);
 
 const schema = {
 
-  email: {
+  name: {
     type: String,
     required: true,
     validation: Joi.string().min(1)
   },
 
-  message: {
+  imageName: {
     type: String,
     required: true,
     validation: Joi.string().min(1)
-  },
-
-  informationId: {
-    type: String,
-    required: true,
-    validation: Joi.string()
-  },
-
-  dreamsId: {
-    type: Array,
-    required: true,
-    validation: Joi.array()
-  },
-
-  personId: {
-    type: String,
-    required: true,
-    validation: Joi.string()
   }
 
 };
