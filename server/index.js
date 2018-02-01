@@ -2,11 +2,11 @@ const Hapi = require(`hapi`);
 const inert = require(`inert`);
 const Path = require(`path`);
 
-const {
-  PORT = 3000,
-  URL = `http://localhost`,
-  MONGO_URL
-} = process.env;
+// const {
+//   PORT = 3000,
+//   URL = `http://localhost`,
+//   MONGO_URL
+// } = process.env;
 
 const server = new Hapi.Server({
   port: 3000,

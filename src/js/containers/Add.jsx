@@ -1,5 +1,5 @@
 import React from 'react';
-import InputItem from '../components/InputItem';
+import Form from '../components/Form';
 import {
   inject,
   observer,
@@ -9,19 +9,28 @@ import {
 const Add = ({store}) => {
 
   const {
-    dreams, cards
+    cards, dreams, chosenDreams
   } = store;
+
+  console.log(chosenDreams);
+  const toggle = false;
 
   const handleSubmit = e => {
     e.preventDefault();
+    console.log(`test`);
+    toggle !== toggle;
   };
 
   return (
     <section className='createCard'>
       <div className='cardViz'>
         <h1>#toekomstmuziek</h1>
+        <p>{cards[0]}</p>
         <div>
-          <div className='leftDreams'>
+          {
+            chosenDreams.map(d => <span key={d}>{d}</span>)
+          }
+          {/* <div className='leftDreams'>
             <p>{cards[0]}</p>
             <p>{cards[1]}</p>
             <p>{cards[2]}</p>
@@ -30,16 +39,14 @@ const Add = ({store}) => {
           <div className='rightDreams'>
             <p>{cards[3]}</p>
             <p>{cards[5]}</p>
-          </div>
+          </div> */}
         </div>
 
       </div>
+
       <form className='cardOptions' onSubmit={handleSubmit}>
         {
-          dreams.forEach(d => {
-            console.log(d);
-            <InputItem key={d} />;
-          })
+          dreams.map(d => <Form key={d} props={d} />)
         }
       </form>
     </section>
