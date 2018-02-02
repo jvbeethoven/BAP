@@ -7,6 +7,8 @@
   --pinkBG: rgba(241, 125, 174, .1);
   --blue: #6fa6fe;
   --purple: #3a008b;
-  --purpleBG: rgba(58, 0, 139, .1);
+  --purpleBG: rgba(221, 211, 238, .3);
+  /* --purpleBG: rgba(58, 0, 139, .07); */
   --yellowBG: rgba(255, 213, 22, .1);
+  --yellowBG2: rgba(255, 213, 22, .3);
 }

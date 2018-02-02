@@ -38,13 +38,17 @@ const Add = ({store}) => {
       <form className='dreams-options' onSubmit={handleSubmit}>
         <div className='dreams-options-section dreams-options-sex'>
           <p className='dreams-question'>Stap 1: wie ben jij?</p>
-          <input className='checkbox' type='radio' id='male'
-            name='contact' value='man'  />
-          <label className='dream-label'>Man</label>
+          <div className='sex-section'>
+            <div>
+              <input className='female input sex-input' type='radio' name='sex' value='female' />
+              <label className='female-label sex-label' htmlFor='female'></label>
+            </div>
+            <div>
+              <input className='male input sex-input' type='radio' name='sex' value='male' />
+              <label className='male-label sex-label' htmlFor='male'></label>
+            </div>
+          </div>
 
-          <input className='checkbox' type='radio' id='female'
-            name='contact' value='vrouw' />
-          <label className='dream-label'>Vrouw</label>
         </div>
         <div className='dreams-options-section dreams-options-items'>
           <p className='dreams-question'>Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?</p>

@@ -58,6 +58,10 @@ html {
           box-sizing: inherit;
 }
 
+:root {
+  /* --purpleBG: rgba(58, 0, 139, .07); */
+}
+
 html {
   background-color: #fafafa;
 }
@@ -88,7 +92,7 @@ header {
           align-items: center;
   /* max-height: 10vh; */
   height: 10%;
-  background-color: rgba(241, 125, 174, .1);
+  background-color: rgba(255, 213, 22, .3);
 }
 
 .header-home {
@@ -363,5 +367,64 @@ header {
   height: 150px;
   height: 15rem;
 }
+
+.dreams-options-section .input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+}
+
+.female {
+  background: url(/assets/img/female.png) no-repeat;
+  width: 91px;
+  width: 9.1rem;
+  height: 130px;
+  height: 13rem;
+}
+
+.male {
+  background: url(/assets/img/male.png) no-repeat;
+  width: 150px;
+  width: 15rem;
+  height: 110px;
+  height: 11rem;
+}
+
+.sex-label {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.8" /><feFuncG type="linear" slope="1.8" /><feFuncB type="linear" slope="1.8" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncA type="table" tableValues="0 0.7" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+          filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.input:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6063000000000001 0.3576 0.0361 0 0 0.1063 0.8575999999999999 0.0361 0 0 0.1063 0.3576 0.5361 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncA type="table" tableValues="0 0.9" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+          filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.sex-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input[type='radio']:checked {
+  outline: 0;
+  -webkit-filter: none;
+          filter: none;
+}
+
+span { color: #6d84b4; }
 
 /*# sourceMappingURL=style.css.map*/
