@@ -127,7 +127,26 @@ header {
   width: 30vw;
   height: 91vh;
   background-color: #3a008b;
+  padding: 30px 40px;
+  padding: 3rem 4rem;
+}
 
+.dreams-options-section {
+  padding: 20px 0;
+  padding: 2rem 0;
+}
+
+.dreams-question {
+  color: #ffd516;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 20px 0;
+  padding: 2rem 0;
+  max-width: 280px;
+  max-width: 28rem;
+  line-height: 20px;
+  line-height: 2rem;
 }
 
 .checkbox {
@@ -143,10 +162,31 @@ header {
           appearance: none;
   outline: none;
   cursor: pointer;
+  margin: 6px;
+  margin: .6rem;
 }
 
 .checkbox:checked {
   background-color: #ffd516;
+}
+
+.dream-label {
+  color: white;
+}
+
+.submit-dreams {
+  margin: 30px 0;
+  margin: 3rem 0;
+  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
+  background: #ffd516;
+  cursor: pointer;
+  /* border-radius: 1rem; */
+  border: 0 none;
+  color: #3a008b;
+  font-size: 19px;
+  font-size: 1.9rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map*/

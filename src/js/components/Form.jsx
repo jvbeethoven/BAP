@@ -14,7 +14,7 @@ const Form = ({props, addDreams}) => {
   return (
     <div>
       <input type='checkbox' id={props} className='checkbox' onChange={handleChange}></input>
-      <label>{props}</label>
+      <label className='dream-label'>{props}</label>
     </div>
   );
 };

@@ -30,10 +30,21 @@ const Add = ({store}) => {
       </div>
 
       <form className='dreams-options' onSubmit={handleSubmit}>
-        {
-          dreams.map(d => <Form key={d} props={d} />)
-        }
-        <input type='submit'></input>
+        <div className='dreams-options-section dreams-options-sex'>
+          <p className='dreams-question'>Stap 1: wie ben jij?</p>
+          <input className='checkbox' type='radio' id='male'
+            name='contact' value='man'  />
+          <label className='dream-label'>Man</label>
+
+          <input className='checkbox' type='radio' id='female'
+            name='contact' value='vrouw' />
+          <label className='dream-label'>Vrouw</label>
+        </div>
+        <div className='dreams-options-section dreams-options-items'>
+          <p className='dreams-question'>Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?</p>
+          {dreams.map(d => <Form key={d} props={d} />)}
+        </div>
+        <input type='submit' className='submit-dreams' value='Naar de toekomst'></input>
       </form>
     </section>
   );

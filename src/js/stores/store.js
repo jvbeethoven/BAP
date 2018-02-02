@@ -7,6 +7,9 @@ class Store {
   @observable
   name = `toekomstmuziek`
 
+  @observable
+  isDreaming = false;
+
   // @observable
   // dream = `dream`
 
@@ -14,7 +17,7 @@ class Store {
   cards = [`1`, `2`, `3`, `4`, `5`];
 
   @observable
-  dreams = [`kids`, `love`, `health`, `car`, `house`, `job`, `travel`]
+  dreams = [`Perfecte job`, `kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Droom auto`, `Diploma`, `Liefde`, `Trouwen`, `Sportiviteit`]
 
   @observable
   chosenDreams = []
@@ -64,6 +67,11 @@ class Store {
         }
       }
       // git;
+    }
+
+  @action
+    changeButton = bool => {
+      this.isDreaming = bool;
     }
 
 }

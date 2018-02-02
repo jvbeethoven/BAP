@@ -54,7 +54,20 @@ header {
   width: 30vw;
   height: 91vh;
   background-color: var(--purple);
+  padding: 3rem 4rem;
+}
 
+.dreams-options-section {
+  padding: 2rem 0;
+}
+
+.dreams-question {
+  color: var(--yellow);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  max-width: 28rem;
+  line-height: 2rem;
 }
 
 .checkbox {
@@ -67,8 +80,25 @@ header {
   appearance: none;
   outline: none;
   cursor: pointer;
+  margin: .6rem;
 }
 
 .checkbox:checked {
   background-color: var(--yellow);
+}
+
+.dream-label {
+  color: white;
+}
+
+.submit-dreams {
+  margin: 3rem 0;
+  padding: 1.5rem 2.5rem;
+  background: var(--yellow);
+  cursor: pointer;
+  /* border-radius: 1rem; */
+  border: 0 none;
+  color: var(--purple);
+  font-size: 1.9rem;
+  font-weight: bold;
 }
