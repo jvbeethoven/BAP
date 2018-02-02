@@ -8,7 +8,7 @@ class Store {
   name = `toekomstmuziek`
 
   @observable
-  sex = `female`
+  sex = ``
 
   @observable
   isDreaming = false;

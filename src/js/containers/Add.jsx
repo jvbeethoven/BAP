@@ -32,7 +32,7 @@ const Add = ({store}) => {
             <Dream key={d} props={d} />
           )}
           <div className='dreams-you'>
-            <img src={`../assets/img/${sex}-person.png`} className='dreams-you-img'></img>
+            <img src={sex ? `../assets/img/${sex}-person.png` : ``} className='dreams-you-img'></img>
           </div>
           <p className='dreams-title'>Mijn<br />toekomst <br />dromen</p>
         </div>

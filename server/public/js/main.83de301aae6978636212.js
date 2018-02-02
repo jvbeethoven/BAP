@@ -28380,7 +28380,7 @@ var Add = function Add(_ref) {
               lineNumber: 34
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/' + sex + '-person.png', className: 'dreams-you-img', __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sex ? '../assets/img/' + sex + '-person.png' : '', className: 'dreams-you-img', __source: {
               fileName: _jsxFileName,
               lineNumber: 35
             }
@@ -28805,7 +28805,7 @@ var Store = (_class = function Store() {
 }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'sex', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
-    return 'female';
+    return '';
   }
 }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'isDreaming', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
@@ -29474,4 +29474,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.560113f03c69c34e0b3e.js.map
+//# sourceMappingURL=main.83de301aae6978636212.js.map

@@ -28449,7 +28449,7 @@ var Add = function Add(_ref) {
                 lineNumber: 46
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { checked: 'checked', onChange: function onChange() {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
                 return handleChangeSex('female');
               }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
                 fileName: _jsxFileName,
@@ -28805,7 +28805,7 @@ var Store = (_class = function Store() {
 }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'sex', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
-    return 'female';
+    return '';
   }
 }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'isDreaming', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
@@ -29474,4 +29474,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.3c1fa0587edac9fc66cb.js.map
+//# sourceMappingURL=main.fad6011aeb033ec0d862.js.map

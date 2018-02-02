@@ -28449,7 +28449,7 @@ var Add = function Add(_ref) {
                 lineNumber: 46
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { checked: 'checked', onChange: function onChange() {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
                 return handleChangeSex('female');
               }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
                 fileName: _jsxFileName,
@@ -29474,4 +29474,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.a305da41ef814545d6fb.js.map
+//# sourceMappingURL=main.b2f6ba6b660fcbec990a.js.map
