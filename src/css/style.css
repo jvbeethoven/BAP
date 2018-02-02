@@ -249,7 +249,7 @@ header {
   height: 11rem;
 }
 
-.sex-label {
+.sex-input {
   cursor: pointer;
   background-size: contain;
   background-repeat: no-repeat;
