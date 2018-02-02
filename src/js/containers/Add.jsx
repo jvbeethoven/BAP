@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../components/Form';
+import Dream from '../components/Dream';
 import {
   inject,
   observer,
@@ -12,42 +13,27 @@ const Add = ({store}) => {
     cards, dreams, chosenDreams
   } = store;
 
-  console.log(chosenDreams);
-  const toggle = false;
-
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(`test`);
-    toggle !== toggle;
+    console.log(`submit`);
   };
 
   return (
-    <section className='createCard'>
-      <div className='cardViz'>
-        <h1>#toekomstmuziek</h1>
+    <section className='card'>
+      <div className='card-chosen'>
+        <h1 className='card-title'>#toekomstmuziek</h1>
         <p>{cards[0]}</p>
-        <div>
-          {
-            chosenDreams.map(d => <span key={d}>{d}</span>)
-          }
-          {/* <div className='leftDreams'>
-            <p>{cards[0]}</p>
-            <p>{cards[1]}</p>
-            <p>{cards[2]}</p>
-          </div>
-          <div className='person'>person</div>
-          <div className='rightDreams'>
-            <p>{cards[3]}</p>
-            <p>{cards[5]}</p>
-          </div> */}
+        <div className='dreams-chosen'>
+          {chosenDreams.map(d => <Dream key={d} props={d} />)}
         </div>
 
       </div>
 
-      <form className='cardOptions' onSubmit={handleSubmit}>
+      <form className='dreams-options' onSubmit={handleSubmit}>
         {
           dreams.map(d => <Form key={d} props={d} />)
         }
+        <input type='submit'></input>
       </form>
     </section>
   );

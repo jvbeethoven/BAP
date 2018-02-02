@@ -8,13 +8,67 @@ html {
 body {
   font-family: Roboto;
   font-size: 1.6rem;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 header {
   margin: 2rem 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 4rem;
 }
 
-h1 {
-  font-size: 3rem;
+/* .header {
+   kan create niet aanspreken
+  &-create {
+    min-width: 5rem;
+    min-height: 3rem;
+    background-color: var(--yellow);
+  }
+
+  &-home {
+    color: blue;
+  }
+} */
+
+.header-create {
+  min-width: 5rem;
+  min-height: 3rem;
+  background-color: var(--yellow);
+  padding: 2rem;
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.dreams-options {
+  width: 30vw;
+  height: 91vh;
+  background-color: var(--purple);
+
+}
+
+.checkbox {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: var(--purple);
+  border-radius: 50%;
+  vertical-align: middle;
+  border: .2rem solid var(--yellow);
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: var(--yellow);
 }

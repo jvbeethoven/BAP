@@ -8,24 +8,19 @@ import {Route, Switch, Link, Redirect} from 'react-router-dom';
 import Home from './Home';
 import Add from './Add';
 
-const App = ({name}) => (
+const App = () => (
 
   <section>
 
     {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
-    <header>
-      <h1>Hello, {name}</h1>
+    <header className='header'>
+      <Link className='header-home' to='/'>home</Link>
+      {/* <div className='header-title'>Toekomstmuziek</div> */}
+      <Link className='header-create' to={`/Add`}> Creëer jouw toekomst </Link>
     </header>
 
     <section>
-      <header className='header'>
-        <Link className='header-link' to='/'>
-          <div className='header-home'>Home</div>
-        </Link>
-        <div className='header-title'>Toekomstmuziek</div>
-        <div className='header-button'><Link className='header-link' to={`/Add`}> + </Link></div>
-      </header>
       <Switch>
         <Route
           exact path='/'

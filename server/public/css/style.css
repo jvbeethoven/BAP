@@ -66,18 +66,87 @@ body {
   font-family: Roboto;
   font-size: 16px;
   font-size: 1.6rem;
-  margin: 20px;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 header {
   margin: 20px 0;
   margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 40px;
+  padding: 0 4rem;
 }
 
-h1 {
-  font-size: 30px;
-  font-size: 3rem;
+/* .header {
+   kan create niet aanspreken
+  &-create {
+    min-width: 5rem;
+    min-height: 3rem;
+    background-color: var(--yellow);
+  }
+
+  &-home {
+    color: blue;
+  }
+} */
+
+.header-create {
+  min-width: 50px;
+  min-width: 5rem;
+  min-height: 30px;
+  min-height: 3rem;
+  background-color: #ffd516;
+  padding: 20px;
+  padding: 2rem;
+  color: #3a008b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card {
+  width: 100vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.dreams-options {
+  width: 30vw;
+  height: 91vh;
+  background-color: #3a008b;
+
+}
+
+.checkbox {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: #3a008b;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 2px solid #ffd516;
+  border: .2rem solid #ffd516;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox:checked {
+  background-color: #ffd516;
 }
 
 /*# sourceMappingURL=style.css.map*/
