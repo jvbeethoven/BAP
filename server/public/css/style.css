@@ -63,9 +63,9 @@ html {
 }
 
 body {
-  font-family: Roboto;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-family: Jaldi;
+  font-size: 18px;
+  font-size: 1.8rem;
   height: 100vh;
   /* margin: 2rem; */
 }
@@ -93,6 +93,11 @@ header {
 
 .header-home {
   font-weight: bold;
+  font-size: 23px;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #eb5941;
+
 }
 
 /* .header {
@@ -135,12 +140,8 @@ header {
           align-items: flex-end;
 }
 
-.card-title {
-  font-weight: bold;
-}
-
 .dreams-options {
-  width: 30vw;
+  width: 25vw;
   height: 100%;
   background-color: #3a008b;
   padding: 30px 50px 30px 80px;
@@ -176,6 +177,37 @@ header {
   max-width: 28rem;
   line-height: 20px;
   line-height: 2rem;
+}
+
+.dreams-you {
+  width: 260px;
+  width: 26rem;
+  height: 310px;
+  height: 31rem;
+  background-color: #6fa6fe;
+
+  position: absolute;
+  left: 33%;
+  top: 34%;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dreams-you-img {
+  max-width: 130px;
+  max-width: 13rem;
+  max-height: 250px;
+  max-height: 25rem;
 }
 
 .checkbox {
@@ -221,9 +253,36 @@ header {
 }
 
 .card-chosen {
-  width: 70vw;
+  width: 75vw;
   height: 100%;
-  background-color: rgba(58, 0, 139, .1);
+  position: relative;
+  background-color: rgba(255, 213, 22, .1);
+}
+
+.card-title {
+  position: absolute;
+  padding: 20px 18px;
+  padding: 2rem 1.8rem;
+  background-color: #ffd6d9;
+  color: #3a008b;
+  font-size: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+  top: 30%;
+  left: 8%;
+}
+
+.dreams-title {
+  position: absolute;
+  top: 11%;
+  right: 32%;
+  background-color: #ffd6d9;
+  padding: 10px;
+  padding: 1rem;
+  font-size: 70px;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #3a008b;
 }
 
 .dream-img {
@@ -231,6 +290,78 @@ header {
   max-width: 12rem;
   max-height: 120px;
   max-height: 12rem;
+}
+
+.dream-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dream-item-1 {
+  position: absolute;
+  top: 12%;
+  left: 29%;
+  width: 240px;
+  width: 24rem;
+  height: 180px;
+  height: 18rem;
+  background-color: #f17dae;
+
+}
+
+.dream-item-2 {
+  position: absolute;
+  top: 13%;
+  right: 19%;
+  background-color: #3a008b;
+  width: 140px;
+  width: 14rem;
+  height: 140px;
+  height: 14rem;
+}
+
+.dream-item-3 {
+  position: absolute;
+  bottom: 42%;
+  left: 8%;
+  background-color: #ffd516;
+  width: 280px;
+  width: 28rem;
+  height: 160px;
+  height: 16rem;
+}
+
+.dream-item-4 {
+  position: absolute;
+  top: 29%;
+  right: 7%;
+  background-color: #6fa6fe;
+  width: 260px;
+  width: 26rem;
+  height: 160px;
+  height: 16rem;
+}
+
+.dream-item-5 {
+  position: absolute;
+  top: 42%;
+  right: 29%;
+  background-color: #eb5941;
+  width: 190px;
+  width: 19rem;
+  height: 150px;
+  height: 15rem;
 }
 
 /*# sourceMappingURL=style.css.map*/

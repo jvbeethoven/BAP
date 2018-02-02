@@ -2,30 +2,39 @@
 
 import React from 'react';
 import {inject, observer} from 'mobx-react';
-import {string} from 'prop-types';
+import {string, object} from 'prop-types';
+let lastId = 0;
 
-const Dream = ({props}) => {
+const Dream = ({props, chosenDreams}) => {
+
   const imgSrc = `../assets/img/${props}.png`;
+
+  // for (let i = 0;i < 25;i ++) {
+  lastId ++;
+  // }
+  console.log(chosenDreams);
+
   return (
-    <div className='dream-item'>
+    <div className={`dream-item dream-item-${  lastId}`}>
       <img
-        className={`dream-img ${  props}`}
+        className={`dream-img dream-img-${  lastId}`}
         alt={props}
         src={imgSrc}
       ></img>
-      <p>{props}</p>
+      <p className='dream-label'>{props}</p>
     </div>
   );
 };
 
 Dream.propTypes = {
-  props: string.isRequired
+  props: string.isRequired,
+  chosenDreams: object.isRequired
 };
 
 export default inject(
   ({store}) => {
     return {
-      addDreams: store.addDreams
+      chosenDreams: store.chosenDreams
     };
   }
 )(

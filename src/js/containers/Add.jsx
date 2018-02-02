@@ -10,7 +10,7 @@ import {
 const Add = ({store}) => {
 
   const {
-    cards, dreams, chosenDreams
+    dreams, chosenDreams
   } = store;
 
   const handleSubmit = e => {
@@ -22,9 +22,15 @@ const Add = ({store}) => {
     <section className='card'>
       <div className='card-chosen'>
         <h1 className='card-title'>#toekomstmuziek</h1>
-        <p>{cards[0]}</p>
         <div className='dreams-chosen'>
-          {chosenDreams.map(d => <Dream key={d} props={d} />)}
+          {chosenDreams.map(d =>
+            // console.log(d)
+            <Dream key={d} props={d} />
+          )}
+          <div className='dreams-you'>
+            <img src='../assets/img/person.png' className='dreams-you-img'></img>
+          </div>
+          <p className='dreams-title'>Mijn<br />toekomst <br />dromen</p>
         </div>
 
       </div>

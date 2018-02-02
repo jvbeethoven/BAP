@@ -6,8 +6,8 @@ html {
 }
 
 body {
-  font-family: Roboto;
-  font-size: 1.6rem;
+  font-family: Jaldi;
+  font-size: 1.8rem;
   height: 100vh;
   /* margin: 2rem; */
 }
@@ -28,6 +28,10 @@ header {
 
 .header-home {
   font-weight: bold;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: var(--reddish);
+
 }
 
 /* .header {
@@ -61,12 +65,8 @@ header {
   align-items: flex-end;
 }
 
-.card-title {
-  font-weight: bold;
-}
-
 .dreams-options {
-  width: 30vw;
+  width: 25vw;
   height: 100%;
   background-color: var(--purple);
   padding: 3rem 5rem 3rem 8rem;
@@ -88,6 +88,25 @@ header {
   padding: 2rem 0;
   max-width: 28rem;
   line-height: 2rem;
+}
+
+.dreams-you {
+  width: 26rem;
+  height: 31rem;
+  background-color: var(--blue);
+
+  position: absolute;
+  left: 33%;
+  top: 34%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dreams-you-img {
+  max-width: 13rem;
+  max-height: 25rem;
 }
 
 .checkbox {
@@ -125,12 +144,88 @@ header {
 }
 
 .card-chosen {
-  width: 70vw;
+  width: 75vw;
   height: 100%;
-  background-color: var(--purpleBG);
+  position: relative;
+  background-color: var(--yellowBG);
+}
+
+.card-title {
+  position: absolute;
+  padding: 2rem 1.8rem;
+  background-color: var(--lightPink);
+  color: var(--purple);
+  font-size: 3rem;
+  font-weight: bold;
+  top: 30%;
+  left: 8%;
+}
+
+.dreams-title {
+  position: absolute;
+  top: 11%;
+  right: 32%;
+  background-color: var(--lightPink);
+  padding: 1rem;
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--purple);
 }
 
 .dream-img {
   max-width: 12rem;
   max-height: 12rem;
+}
+
+.dream-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dream-item-1 {
+  position: absolute;
+  top: 12%;
+  left: 29%;
+  width: 24rem;
+  height: 18rem;
+  background-color: var(--pink);
+
+}
+
+.dream-item-2 {
+  position: absolute;
+  top: 13%;
+  right: 19%;
+  background-color: var(--purple);
+  width: 14rem;
+  height: 14rem;
+}
+
+.dream-item-3 {
+  position: absolute;
+  bottom: 42%;
+  left: 8%;
+  background-color: var(--yellow);
+  width: 28rem;
+  height: 16rem;
+}
+
+.dream-item-4 {
+  position: absolute;
+  top: 29%;
+  right: 7%;
+  background-color: var(--blue);
+  width: 26rem;
+  height: 16rem;
+}
+
+.dream-item-5 {
+  position: absolute;
+  top: 42%;
+  right: 29%;
+  background-color: var(--reddish);
+  width: 19rem;
+  height: 15rem;
 }
