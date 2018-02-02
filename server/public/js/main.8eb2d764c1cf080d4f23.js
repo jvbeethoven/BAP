@@ -24575,6 +24575,16 @@ var App = function App(_ref) {
           lineNumber: 45
         }
       })
+    ),
+    isDreaming ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'footer',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        }
+      },
+      ' Copyright \xA9 2018 Hogeschool Vives. All rights reserved. '
     )
   );
 };
@@ -28380,7 +28390,7 @@ var Add = function Add(_ref) {
               lineNumber: 34
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/' + sex + '-person.png', className: 'dreams-you-img', __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sex ? '../assets/img/' + sex + '-person.png' : '', className: 'dreams-you-img', __source: {
               fileName: _jsxFileName,
               lineNumber: 35
             }
@@ -28805,7 +28815,7 @@ var Store = (_class = function Store() {
 }), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'sex', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
-    return 'female';
+    return '';
   }
 }), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'isDreaming', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
@@ -29474,4 +29484,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.b2f6ba6b660fcbec990a.js.map
+//# sourceMappingURL=main.8eb2d764c1cf080d4f23.js.map

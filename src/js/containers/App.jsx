@@ -2,7 +2,7 @@ import React from 'react';
 import {bool, func} from 'prop-types';
 
 import {inject, observer} from 'mobx-react';
-import DevTools from 'mobx-react-devtools';
+// import DevTools from 'mobx-react-devtools';
 
 import {Route, Switch, Link, Redirect} from 'react-router-dom';
 import Home from './Home';
@@ -16,9 +16,9 @@ const App = ({isDreaming, changeButton}) => {
 
 
   return (
-    <section>
+    <section className='wrapper'>
 
-      {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
+      {/* {process.env.NODE_ENV !== `production` ? <DevTools /> : null} */}
 
       <header className='header'>
         <Link className='header-home' to='/' onClick={showButton}> {isDreaming ? `Terug naar` : ``}  Toekomst inspiratie</Link>
@@ -28,13 +28,9 @@ const App = ({isDreaming, changeButton}) => {
 
       <section className='body'>
         <Switch>
-          <Route
+          {/* <Route
             exact path='/'
             component={Home}
-          />
-          {/* <Route
-            exact path='/suggestions/:id'
-            component={SuggestionDetail}
           /> */}
           <Route
             exact path='/Add'
@@ -47,6 +43,7 @@ const App = ({isDreaming, changeButton}) => {
           component={Home}
         />
       </section>
+      {isDreaming ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>}
 
     </section>
   );

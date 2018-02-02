@@ -24546,24 +24546,16 @@ var App = function App(_ref) {
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
-          exact: true, path: '/',
-          component: __WEBPACK_IMPORTED_MODULE_5__Home__["a" /* default */],
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 31
-          }
-        }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
           exact: true, path: '/Add',
           component: __WEBPACK_IMPORTED_MODULE_6__Add__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 35
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["c" /* Redirect */], { to: '/', __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 39
           }
         })
       ),
@@ -24572,9 +24564,19 @@ var App = function App(_ref) {
         component: __WEBPACK_IMPORTED_MODULE_5__Home__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 41
         }
       })
+    ),
+    isDreaming ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'footer',
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      },
+      ' Copyright \xA9 2018 Hogeschool Vives. All rights reserved. '
     )
   );
 };
@@ -28380,7 +28382,7 @@ var Add = function Add(_ref) {
               lineNumber: 34
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/' + sex + '-person.png', className: 'dreams-you-img', __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sex ? '../assets/img/' + sex + '-person.png' : '', className: 'dreams-you-img', __source: {
               fileName: _jsxFileName,
               lineNumber: 35
             }
@@ -29474,4 +29476,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.fad6011aeb033ec0d862.js.map
+//# sourceMappingURL=main.643a66d886ca41f1a8a8.js.map
