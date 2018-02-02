@@ -10,12 +10,16 @@ import {
 const Add = ({store}) => {
 
   const {
-    dreams, chosenDreams
+    dreams, chosenDreams, changeSex, sex
   } = store;
 
   const handleSubmit = e => {
     e.preventDefault();
     console.log(`submit`);
+  };
+
+  const handleChangeSex = string => {
+    changeSex(string);
   };
 
   return (
@@ -28,7 +32,7 @@ const Add = ({store}) => {
             <Dream key={d} props={d} />
           )}
           <div className='dreams-you'>
-            <img src='../assets/img/person.png' className='dreams-you-img'></img>
+            <img src={`../assets/img/${sex}-person.png`} className='dreams-you-img'></img>
           </div>
           <p className='dreams-title'>Mijn<br />toekomst <br />dromen</p>
         </div>
@@ -40,11 +44,11 @@ const Add = ({store}) => {
           <p className='dreams-question'>Stap 1: wie ben jij?</p>
           <div className='sex-section'>
             <div>
-              <input className='female input sex-input' type='radio' name='sex' value='female' />
+              <input checked='checked' onChange={() => handleChangeSex(`female`)} className='female input sex-input' type='radio' name='sex' value='female' />
               <label className='female-label sex-label' htmlFor='female'></label>
             </div>
             <div>
-              <input className='male input sex-input' type='radio' name='sex' value='male' />
+              <input onChange={() => handleChangeSex(`male`)} className='male input sex-input' type='radio' name='sex' value='male' />
               <label className='male-label sex-label' htmlFor='male'></label>
             </div>
           </div>

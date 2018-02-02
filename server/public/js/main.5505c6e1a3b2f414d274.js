@@ -28319,7 +28319,9 @@ var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/Add.jsx';
 var Add = function Add(_ref) {
   var store = _ref.store;
   var dreams = store.dreams,
-      chosenDreams = store.chosenDreams;
+      chosenDreams = store.chosenDreams,
+      changeSex = store.changeSex,
+      sex = store.sex;
 
 
   var handleSubmit = function handleSubmit(e) {
@@ -28327,25 +28329,34 @@ var Add = function Add(_ref) {
     console.log('submit');
   };
 
+  var handleChangeSex = function handleChangeSex() {
+    if (sex === 'male') {
+      changeSex('female');
+    }
+    if (sex === 'female') {
+      changeSex('male');
+    }
+  };
+
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'section',
     { className: 'card', __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 31
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'card-chosen', __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 32
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h1',
         { className: 'card-title', __source: {
             fileName: _jsxFileName,
-            lineNumber: 24
+            lineNumber: 33
           }
         },
         '#toekomstmuziek'
@@ -28354,7 +28365,7 @@ var Add = function Add(_ref) {
         'div',
         { className: 'dreams-chosen', __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 34
           }
         },
         chosenDreams.map(function (d) {
@@ -28362,7 +28373,7 @@ var Add = function Add(_ref) {
             // console.log(d)
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Dream__["a" /* default */], { key: d, props: d, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 28
+                lineNumber: 37
               }
             })
           );
@@ -28371,12 +28382,12 @@ var Add = function Add(_ref) {
           'div',
           { className: 'dreams-you', __source: {
               fileName: _jsxFileName,
-              lineNumber: 30
+              lineNumber: 39
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/person.png', className: 'dreams-you-img', __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/' + sex + 'person.png', className: 'dreams-you-img', __source: {
               fileName: _jsxFileName,
-              lineNumber: 31
+              lineNumber: 40
             }
           })
         ),
@@ -28384,21 +28395,21 @@ var Add = function Add(_ref) {
           'p',
           { className: 'dreams-title', __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 42
             }
           },
           'Mijn',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 42
             }
           }),
           'toekomst ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 42
             }
           }),
           'dromen'
@@ -28409,21 +28420,21 @@ var Add = function Add(_ref) {
       'form',
       { className: 'dreams-options', onSubmit: handleSubmit, __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 47
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'dreams-options-section dreams-options-sex', __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 48
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           { className: 'dreams-question', __source: {
               fileName: _jsxFileName,
-              lineNumber: 40
+              lineNumber: 49
             }
           },
           'Stap 1: wie ben jij?'
@@ -28432,7 +28443,7 @@ var Add = function Add(_ref) {
           'div',
           { className: 'sex-section', __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 50
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -28440,17 +28451,17 @@ var Add = function Add(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 42
+                lineNumber: 51
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { checked: 'checked', onChange: handleChangeSex, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 43
+                lineNumber: 52
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'female-label sex-label', htmlFor: 'female', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 44
+                lineNumber: 53
               }
             })
           ),
@@ -28459,17 +28470,17 @@ var Add = function Add(_ref) {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 46
+                lineNumber: 55
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 47
+                lineNumber: 56
               }
             }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'male-label sex-label', htmlFor: 'male', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 48
+                lineNumber: 57
               }
             })
           )
@@ -28479,14 +28490,14 @@ var Add = function Add(_ref) {
         'div',
         { className: 'dreams-options-section dreams-options-items', __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 62
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           { className: 'dreams-question', __source: {
               fileName: _jsxFileName,
-              lineNumber: 54
+              lineNumber: 63
             }
           },
           'Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?'
@@ -28494,14 +28505,14 @@ var Add = function Add(_ref) {
         dreams.map(function (d) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Form__["a" /* default */], { key: d, props: d, __source: {
               fileName: _jsxFileName,
-              lineNumber: 55
+              lineNumber: 64
             }
           });
         })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'submit', className: 'submit-dreams', value: 'Naar de toekomst', __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 66
         }
       })
     )
@@ -28690,7 +28701,7 @@ Dream.propTypes = {
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_Card__ = __webpack_require__(91);
-var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10;
+var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12;
 
 function _initDefineProp(target, property, descriptor, context) {
   if (!descriptor) return;
@@ -28748,15 +28759,17 @@ var Store = (_class = function Store() {
 
   _initDefineProp(this, 'name', _descriptor, this);
 
-  _initDefineProp(this, 'isDreaming', _descriptor2, this);
+  _initDefineProp(this, 'sex', _descriptor2, this);
 
-  _initDefineProp(this, 'maxSelected', _descriptor3, this);
+  _initDefineProp(this, 'isDreaming', _descriptor3, this);
 
-  _initDefineProp(this, 'cards', _descriptor4, this);
+  _initDefineProp(this, 'maxSelected', _descriptor4, this);
 
-  _initDefineProp(this, 'dreams', _descriptor5, this);
+  _initDefineProp(this, 'cards', _descriptor5, this);
 
-  _initDefineProp(this, 'chosenDreams', _descriptor6, this);
+  _initDefineProp(this, 'dreams', _descriptor6, this);
+
+  _initDefineProp(this, 'chosenDreams', _descriptor7, this);
 
   this.maxDreams = 5;
 
@@ -28774,13 +28787,15 @@ var Store = (_class = function Store() {
     });
   };
 
-  _initDefineProp(this, '_add', _descriptor7, this);
+  _initDefineProp(this, '_add', _descriptor8, this);
 
-  _initDefineProp(this, 'addDreams', _descriptor8, this);
+  _initDefineProp(this, 'addDreams', _descriptor9, this);
 
-  _initDefineProp(this, 'checkMaxSelected', _descriptor9, this);
+  _initDefineProp(this, 'checkMaxSelected', _descriptor10, this);
 
-  _initDefineProp(this, 'changeButton', _descriptor10, this);
+  _initDefineProp(this, 'changeButton', _descriptor11, this);
+
+  _initDefineProp(this, 'changeSex', _descriptor12, this);
 
   this.init();
 }, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'name', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
@@ -28788,32 +28803,37 @@ var Store = (_class = function Store() {
   initializer: function initializer() {
     return 'toekomstmuziek';
   }
-}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'isDreaming', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'sex', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    return 'female';
+  }
+}), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'isDreaming', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return false;
   }
-}), _descriptor3 = _applyDecoratedDescriptor(_class.prototype, 'maxSelected', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+}), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, 'maxSelected', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return false;
   }
-}), _descriptor4 = _applyDecoratedDescriptor(_class.prototype, 'cards', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+}), _descriptor5 = _applyDecoratedDescriptor(_class.prototype, 'cards', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return ['1', '2', '3', '4', '5'];
   }
-}), _descriptor5 = _applyDecoratedDescriptor(_class.prototype, 'dreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+}), _descriptor6 = _applyDecoratedDescriptor(_class.prototype, 'dreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return ['Job', 'Kinderen', 'Huis', 'Geluk', 'Geld', 'Huisdier', 'Gezondheid', 'Reizen', 'Droomauto', 'Diploma', 'Liefde', 'Trouwen', 'Sportiviteit'];
   }
-}), _descriptor6 = _applyDecoratedDescriptor(_class.prototype, 'chosenDreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+}), _descriptor7 = _applyDecoratedDescriptor(_class.prototype, 'chosenDreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
     return [];
   }
-}), _descriptor7 = _applyDecoratedDescriptor(_class.prototype, '_add', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+}), _descriptor8 = _applyDecoratedDescriptor(_class.prototype, '_add', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
   enumerable: true,
   initializer: function initializer() {
     var _this2 = this;
@@ -28829,7 +28849,7 @@ var Store = (_class = function Store() {
       });
     };
   }
-}), _descriptor8 = _applyDecoratedDescriptor(_class.prototype, 'addDreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+}), _descriptor9 = _applyDecoratedDescriptor(_class.prototype, 'addDreams', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
   enumerable: true,
   initializer: function initializer() {
     var _this3 = this;
@@ -28851,7 +28871,7 @@ var Store = (_class = function Store() {
       _this3.checkMaxSelected();
     };
   }
-}), _descriptor9 = _applyDecoratedDescriptor(_class.prototype, 'checkMaxSelected', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+}), _descriptor10 = _applyDecoratedDescriptor(_class.prototype, 'checkMaxSelected', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
   enumerable: true,
   initializer: function initializer() {
     var _this4 = this;
@@ -28864,13 +28884,22 @@ var Store = (_class = function Store() {
       }
     };
   }
-}), _descriptor10 = _applyDecoratedDescriptor(_class.prototype, 'changeButton', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+}), _descriptor11 = _applyDecoratedDescriptor(_class.prototype, 'changeButton', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
   enumerable: true,
   initializer: function initializer() {
     var _this5 = this;
 
     return function (bool) {
       _this5.isDreaming = bool;
+    };
+  }
+}), _descriptor12 = _applyDecoratedDescriptor(_class.prototype, 'changeSex', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    var _this6 = this;
+
+    return function (string) {
+      _this6.sex = string;
     };
   }
 })), _class);
@@ -29446,4 +29475,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.b0db7970e89257e1f907.js.map
+//# sourceMappingURL=main.5505c6e1a3b2f414d274.js.map

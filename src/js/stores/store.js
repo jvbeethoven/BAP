@@ -8,6 +8,9 @@ class Store {
   name = `toekomstmuziek`
 
   @observable
+  sex = `female`
+
+  @observable
   isDreaming = false;
 
   @observable
@@ -82,6 +85,11 @@ class Store {
   @action
     changeButton = bool => {
       this.isDreaming = bool;
+    }
+
+  @action
+    changeSex = string => {
+      this.sex = string;
     }
 
 }
