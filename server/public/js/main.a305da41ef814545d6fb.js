@@ -24464,7 +24464,6 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router_dom__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Add__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Add___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__Add__);
 var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/App.jsx';
 
 
@@ -24556,7 +24555,7 @@ var App = function App(_ref) {
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["d" /* Route */], {
           exact: true, path: '/Add',
-          component: __WEBPACK_IMPORTED_MODULE_6__Add__["default"],
+          component: __WEBPACK_IMPORTED_MODULE_6__Add__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
             lineNumber: 39
@@ -28303,14 +28302,385 @@ Home.displayName = 'Home';
 
 /***/ }),
 /* 83 */
-/***/ (function(module, __webpack_exports__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-throw new Error("Module build failed: Duplicate declaration \"changeSex\"\n\n\u001b[0m \u001b[90m 19 | \u001b[39m  }\u001b[33m;\u001b[39m\n \u001b[90m 20 | \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 | \u001b[39m  \u001b[36mconst\u001b[39m changeSex \u001b[33m=\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 | \u001b[39m    \u001b[36mif\u001b[39m (sex \u001b[33m===\u001b[39m \u001b[32m`male`\u001b[39m) {\n \u001b[90m 23 | \u001b[39m      changeSex(\u001b[32m'female'\u001b[39m)\n \u001b[90m 24 | \u001b[39m    }\u001b[0m\n");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Form__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Dream__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mobx_react__ = __webpack_require__(6);
+var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/Add.jsx';
+
+
+
+
+
+var Add = function Add(_ref) {
+  var store = _ref.store;
+  var dreams = store.dreams,
+      chosenDreams = store.chosenDreams,
+      changeSex = store.changeSex,
+      sex = store.sex;
+
+
+  var handleSubmit = function handleSubmit(e) {
+    e.preventDefault();
+    console.log('submit');
+  };
+
+  var handleChangeSex = function handleChangeSex(string) {
+    changeSex(string);
+  };
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'section',
+    { className: 'card', __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'card-chosen', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'h1',
+        { className: 'card-title', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+          }
+        },
+        '#toekomstmuziek'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'dreams-chosen', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          }
+        },
+        chosenDreams.map(function (d) {
+          return (
+            // console.log(d)
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Dream__["a" /* default */], { key: d, props: d, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 32
+              }
+            })
+          );
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'dreams-you', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../assets/img/' + sex + '-person.png', className: 'dreams-you-img', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 35
+            }
+          })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          { className: 'dreams-title', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          },
+          'Mijn',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          }),
+          'toekomst ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 37
+            }
+          }),
+          'dromen'
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'form',
+      { className: 'dreams-options', onSubmit: handleSubmit, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'dreams-options-section dreams-options-sex', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          { className: 'dreams-question', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 44
+            }
+          },
+          'Stap 1: wie ben jij?'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'div',
+          { className: 'sex-section', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 45
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 46
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { checked: 'checked', onChange: function onChange() {
+                return handleChangeSex('female');
+              }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 47
+              }
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'female-label sex-label', htmlFor: 'female', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 48
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 50
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
+                return handleChangeSex('male');
+              }, className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 51
+              }
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'male-label sex-label', htmlFor: 'male', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 52
+              }
+            })
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'dreams-options-section dreams-options-items', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          { className: 'dreams-question', __source: {
+              fileName: _jsxFileName,
+              lineNumber: 58
+            }
+          },
+          'Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?'
+        ),
+        dreams.map(function (d) {
+          return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Form__["a" /* default */], { key: d, props: d, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 59
+            }
+          });
+        })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'submit', className: 'submit-dreams', value: 'Naar de toekomst', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        }
+      })
+    )
+  );
+};
+
+Add.displayName = 'Add';
+Add.propTypes = {
+  store: __WEBPACK_IMPORTED_MODULE_3_mobx_react__["PropTypes"].observableObject.isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_3_mobx_react__["inject"])('store')(Object(__WEBPACK_IMPORTED_MODULE_3_mobx_react__["observer"])(Add)));
+//
+// export default Add;
 
 /***/ }),
-/* 84 */,
-/* 85 */,
+/* 84 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/components/Form.jsx';
+/* eslint-disable react/jsx-filename-extension */
+
+
+
+
+
+var Form = function Form(_ref) {
+  var props = _ref.props,
+      addDreams = _ref.addDreams,
+      maxSelected = _ref.maxSelected;
+
+
+  if (maxSelected) {
+    console.log('max selected');
+  }
+
+  var handleChange = function handleChange() {
+    var bool = document.getElementById(props).checked;
+    addDreams(props, bool);
+  };
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+      type: 'checkbox',
+      id: props,
+      className: 'checkbox',
+      onChange: handleChange, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      }
+    }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'label',
+      { className: 'dream-label', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      },
+      props
+    )
+  );
+};
+
+Form.displayName = 'Form';
+Form.propTypes = {
+  addDreams: __WEBPACK_IMPORTED_MODULE_2_prop_types__["func"].isRequired,
+  maxSelected: __WEBPACK_IMPORTED_MODULE_2_prop_types__["bool"].isRequired,
+  props: __WEBPACK_IMPORTED_MODULE_2_prop_types__["string"].isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"])(function (_ref2) {
+  var store = _ref2.store;
+
+  return {
+    addDreams: store.addDreams,
+    maxSelected: store.maxSelected
+  };
+})(Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["observer"])(Form)));
+// export default Form;
+// export default inject(`store`)(
+//   observer(Form)
+// );
+
+/***/ }),
+/* 85 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/components/Dream.jsx';
+/* eslint-disable react/jsx-filename-extension */
+
+
+
+
+var lastId = 0;
+
+var Dream = function Dream(_ref) {
+  var props = _ref.props,
+      chosenDreams = _ref.chosenDreams;
+
+
+  var imgSrc = '../assets/img/' + props + '.png';
+
+  // for (let i = 0;i < 25;i ++) {
+  lastId++;
+  // }
+  console.log(chosenDreams);
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'div',
+    { className: 'dream-item dream-item-' + lastId, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
+      className: 'dream-img dream-img-' + lastId,
+      alt: props,
+      src: imgSrc,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      }
+    }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      { className: 'dream-label', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        }
+      },
+      props
+    )
+  );
+};
+
+Dream.displayName = 'Dream';
+Dream.propTypes = {
+  props: __WEBPACK_IMPORTED_MODULE_2_prop_types__["string"].isRequired,
+  chosenDreams: __WEBPACK_IMPORTED_MODULE_2_prop_types__["object"].isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["inject"])(function (_ref2) {
+  var store = _ref2.store;
+
+  return {
+    chosenDreams: store.chosenDreams
+  };
+})(Object(__WEBPACK_IMPORTED_MODULE_1_mobx_react__["observer"])(Dream)));
+
+/***/ }),
 /* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -29104,4 +29474,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.9ce1beb9bc36294dd3c6.js.map
+//# sourceMappingURL=main.a305da41ef814545d6fb.js.map
