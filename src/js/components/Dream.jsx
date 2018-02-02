@@ -5,10 +5,15 @@ import {inject, observer} from 'mobx-react';
 import {string} from 'prop-types';
 
 const Dream = ({props}) => {
-  console.log(props);
+  const imgSrc = `../assets/img/${props}.png`;
   return (
     <div className='dream-item'>
-      <img className={props}></img>
+      <img
+        className={`dream-img ${  props}`}
+        alt={props}
+        src={imgSrc}
+      ></img>
+      <p>{props}</p>
     </div>
   );
 };

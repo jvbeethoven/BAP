@@ -21,12 +21,12 @@ const App = ({isDreaming, changeButton}) => {
       {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
       <header className='header'>
-        <Link className='header-home' to='/' onClick={showButton}>home</Link>
+        <Link className='header-home' to='/' onClick={showButton}> {isDreaming ? `Terug naar` : ``}  Toekomst inspiratie</Link>
         {/* <div className='header-title'>Toekomstmuziek</div> */}
         {isDreaming ? `` : <Link className='header-create' to={`/Add`} onClick={removeButton}> Creëer jouw toekomst </Link>}
       </header>
 
-      <section>
+      <section className='body'>
         <Switch>
           <Route
             exact path='/'

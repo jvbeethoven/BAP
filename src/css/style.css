@@ -8,15 +8,26 @@ html {
 body {
   font-family: Roboto;
   font-size: 1.6rem;
+  height: 100vh;
   /* margin: 2rem; */
 }
 
+.body { height: 94vh; }
+
 header {
-  margin: 2rem 0;
+  /* margin: 0 0 2rem; */
+  padding: 2rem 4rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 4rem;
+  align-items: center;
+  /* max-height: 10vh; */
+  height: 10%;
+  background-color: var(--pinkBG);
+}
+
+.header-home {
+  font-weight: bold;
 }
 
 /* .header {
@@ -44,22 +55,31 @@ header {
 
 .card {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.dreams-options {
-  width: 30vw;
-  height: 91vh;
-  background-color: var(--purple);
-  padding: 3rem 4rem;
+.card-title {
+  font-weight: bold;
 }
 
+.dreams-options {
+  width: 30vw;
+  height: 100%;
+  background-color: var(--purple);
+  padding: 3rem 5rem 3rem 8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+/*
 .dreams-options-section {
   padding: 2rem 0;
-}
+} */
 
 .dreams-question {
   color: var(--yellow);
@@ -92,6 +112,7 @@ header {
 }
 
 .submit-dreams {
+  max-width: 30rem;
   margin: 3rem 0;
   padding: 1.5rem 2.5rem;
   background: var(--yellow);
@@ -101,4 +122,15 @@ header {
   color: var(--purple);
   font-size: 1.9rem;
   font-weight: bold;
+}
+
+.card-chosen {
+  width: 70vw;
+  height: 100%;
+  background-color: var(--purpleBG);
+}
+
+.dream-img {
+  max-width: 12rem;
+  max-height: 12rem;
 }

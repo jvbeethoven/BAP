@@ -2,9 +2,13 @@
 
 import React from 'react';
 import {inject, observer} from 'mobx-react';
-import {func, string} from 'prop-types';
+import {func, string, bool} from 'prop-types';
 
-const Form = ({props, addDreams}) => {
+const Form = ({props, addDreams, maxSelected}) => {
+
+  if (maxSelected) {
+    console.log(`max selected`);
+  }
 
   const handleChange = () => {
     const bool = document.getElementById(props).checked;
@@ -13,22 +17,28 @@ const Form = ({props, addDreams}) => {
 
   return (
     <div>
-      <input type='checkbox' id={props} className='checkbox' onChange={handleChange}></input>
+      <input
+        type='checkbox'
+        id={props}
+        className='checkbox'
+        onChange={handleChange}>
+      </input>
       <label className='dream-label'>{props}</label>
     </div>
   );
 };
 
 Form.propTypes = {
-  // dream: string.isRequired,
   addDreams: func.isRequired,
+  maxSelected: bool.isRequired,
   props: string.isRequired
 };
 
 export default inject(
   ({store}) => {
     return {
-      addDreams: store.addDreams
+      addDreams: store.addDreams,
+      maxSelected: store.maxSelected
     };
   }
 )(

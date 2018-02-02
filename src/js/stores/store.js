@@ -10,6 +10,9 @@ class Store {
   @observable
   isDreaming = false;
 
+  @observable
+  maxSelected = false;
+
   // @observable
   // dream = `dream`
 
@@ -17,7 +20,7 @@ class Store {
   cards = [`1`, `2`, `3`, `4`, `5`];
 
   @observable
-  dreams = [`Perfecte job`, `kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Droom auto`, `Diploma`, `Liefde`, `Trouwen`, `Sportiviteit`]
+  dreams = [`Job`, `Kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Droomauto`, `Diploma`, `Liefde`, `Trouwen`, `Sportiviteit`]
 
   @observable
   chosenDreams = []
@@ -66,8 +69,18 @@ class Store {
           }
         }
       }
-      // git;
+
+      this.checkMaxSelected();
     }
+
+  @action
+  checkMaxSelected = () => {
+    if (this.chosenDreams.length >= 5) {
+      this.maxSelected = true;
+    } else if (this.chosenDreams.length < 5) {
+      this.maxSelected = false;
+    }
+  }
 
   @action
     changeButton = bool => {

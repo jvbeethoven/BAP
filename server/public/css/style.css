@@ -66,12 +66,16 @@ body {
   font-family: Roboto;
   font-size: 16px;
   font-size: 1.6rem;
+  height: 100vh;
   /* margin: 2rem; */
 }
 
+.body { height: 94vh; }
+
 header {
-  margin: 20px 0;
-  margin: 2rem 0;
+  /* margin: 0 0 2rem; */
+  padding: 20px 40px;
+  padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,8 +83,16 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 40px;
-  padding: 0 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* max-height: 10vh; */
+  height: 10%;
+  background-color: rgba(241, 125, 174, .1);
+}
+
+.header-home {
+  font-weight: bold;
 }
 
 /* .header {
@@ -111,7 +123,7 @@ header {
 
 .card {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,18 +135,35 @@ header {
           align-items: flex-end;
 }
 
-.dreams-options {
-  width: 30vw;
-  height: 91vh;
-  background-color: #3a008b;
-  padding: 30px 40px;
-  padding: 3rem 4rem;
+.card-title {
+  font-weight: bold;
 }
 
-.dreams-options-section {
-  padding: 20px 0;
-  padding: 2rem 0;
+.dreams-options {
+  width: 30vw;
+  height: 100%;
+  background-color: #3a008b;
+  padding: 30px 50px 30px 80px;
+  padding: 3rem 5rem 3rem 8rem;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+
 }
+
+/*
+.dreams-options-section {
+  padding: 2rem 0;
+} */
 
 .dreams-question {
   color: #ffd516;
@@ -175,6 +204,8 @@ header {
 }
 
 .submit-dreams {
+  max-width: 300px;
+  max-width: 30rem;
   margin: 30px 0;
   margin: 3rem 0;
   padding: 15px 25px;
@@ -187,6 +218,19 @@ header {
   font-size: 19px;
   font-size: 1.9rem;
   font-weight: bold;
+}
+
+.card-chosen {
+  width: 70vw;
+  height: 100%;
+  background-color: rgba(58, 0, 139, .1);
+}
+
+.dream-img {
+  max-width: 120px;
+  max-width: 12rem;
+  max-height: 120px;
+  max-height: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map*/
