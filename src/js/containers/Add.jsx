@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from '../components/Form';
 import Dream from '../components/Dream';
+import {Link} from 'react-router-dom';
 import {
   inject,
   observer,
@@ -58,7 +59,9 @@ const Add = ({store}) => {
           <p className='dreams-question'>Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?</p>
           {dreams.map(d => <Form key={d} props={d} />)}
         </div>
-        <input type='submit' className='submit-dreams' value='Naar de toekomst'></input>
+        <Link to={`/Back`} className='dreams-submit'>
+          <input type='submit' className='submit-dreams' value='Naar de toekomst'></input>
+        </Link>
       </form>
     </section>
   );

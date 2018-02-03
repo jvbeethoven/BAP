@@ -11,6 +11,12 @@ class Store {
   sex = ``
 
   @observable
+  email = ``
+
+  @observable
+  message = ``
+
+  @observable
   isDreaming = false;
 
   @observable
@@ -21,6 +27,9 @@ class Store {
 
   @observable
   dreams = [`Job`, `Kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Droomauto`, `Diploma`, `Liefde`, `Trouwen`, `Sportiviteit`]
+
+  @observable
+  randomMsgs = [`Leuk dat je kinderen wil, vergeet je eicellen niet in te vriezen!`, `nog een random boodschap`, `nog eentje`]
 
   @observable
   chosenDreams = []

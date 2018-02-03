@@ -4,9 +4,10 @@ import {bool, func} from 'prop-types';
 import {inject, observer} from 'mobx-react';
 // import DevTools from 'mobx-react-devtools';
 
-import {Route, Switch, Link, Redirect} from 'react-router-dom';
+import {Route, Switch, Link} from 'react-router-dom';
 import Home from './Home';
 import Add from './Add';
+import Back from './Back';
 
 const App = ({isDreaming, changeButton}) => {
 
@@ -28,20 +29,19 @@ const App = ({isDreaming, changeButton}) => {
 
       <section className='body'>
         <Switch>
-          {/* <Route
+          <Route
             exact path='/'
             component={Home}
-          /> */}
+          />
           <Route
             exact path='/Add'
             component={Add}
           />
-          <Redirect to='/' />
+          <Route
+            exact path='/Back'
+            component={Back}
+          />
         </Switch>
-        <Route
-          exact path='/'
-          component={Home}
-        />
       </section>
       {isDreaming ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>}
 
