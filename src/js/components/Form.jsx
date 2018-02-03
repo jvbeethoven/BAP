@@ -2,17 +2,25 @@
 
 import React from 'react';
 import {inject, observer} from 'mobx-react';
-import {func, string, bool} from 'prop-types';
+import {func, string} from 'prop-types';
 
-const Form = ({props, addDreams, maxSelected}) => {
-
-  if (maxSelected) {
-    console.log(`max selected`);
-  }
+const Form = ({props, addDreams}) => {
 
   const handleChange = () => {
-    const bool = document.getElementById(props).checked;
-    addDreams(props, bool);
+    const checkgroup = document.querySelectorAll(`.checkbox`);
+    const item = document.getElementById(props);
+    const limit = 5;
+
+    addDreams(props, item.checked);
+    let checkedcount = 0;
+
+    for (let i = 0;i < checkgroup.length;i ++) {
+      checkedcount += (checkgroup[i].checked) ? 1 : 0;
+      if (checkedcount > limit) {
+        console.log(`You can only select a maximum of ${limit  } checkboxes`);
+        item.checked = false;
+      }
+    }
   };
 
   return (
@@ -21,6 +29,7 @@ const Form = ({props, addDreams, maxSelected}) => {
         type='checkbox'
         id={props}
         className='checkbox'
+        name='dreams'
         onChange={handleChange}>
       </input>
       <label className='dream-label'>{props}</label>
@@ -30,15 +39,13 @@ const Form = ({props, addDreams, maxSelected}) => {
 
 Form.propTypes = {
   addDreams: func.isRequired,
-  maxSelected: bool.isRequired,
   props: string.isRequired
 };
 
 export default inject(
   ({store}) => {
     return {
-      addDreams: store.addDreams,
-      maxSelected: store.maxSelected
+      addDreams: store.addDreams
     };
   }
 )(
