@@ -1,7 +1,7 @@
 import React from 'react';
 // import Form from '../components/Form';
 // import Dream from '../components/Dream';
-// import {Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {
   inject,
   observer,
@@ -48,9 +48,12 @@ const Back = ({store}) => {
           <input type='text' onSubmit={handleSubmit}></input>
 
         </div>
-        {/* <Link to={`/Back`} className='dreams-submit'> */}
-        <input type='submit' className='submit-dreams' value='Verzenden'></input>
-        {/* </Link> */}
+        <div className='dreams-buttons'>
+          <Link to={`/Add`} className='dreams-submit'>Back</Link>
+          {/* <Link to={`/Back`} className='dreams-submit'> */}
+          <input type='submit' className='submit-dreams' value='Verzenden'></input>
+          {/* </Link> */}
+        </div>
       </form>
     </section>
   );

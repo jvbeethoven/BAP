@@ -2,9 +2,11 @@
 
 import React from 'react';
 import {inject, observer} from 'mobx-react';
-import {func, string} from 'prop-types';
+import {func, string, object} from 'prop-types';
 
-const Form = ({props, addDreams}) => {
+const Form = ({props, addDreams, chosenDreams}) => {
+
+  const isChecked = chosenDreams.includes(props);
 
   const handleChange = () => {
     const checkgroup = document.querySelectorAll(`.checkbox`);
@@ -30,7 +32,9 @@ const Form = ({props, addDreams}) => {
         id={props}
         className='checkbox'
         name='dreams'
-        onChange={handleChange}>
+        onChange={handleChange}
+        defaultChecked={isChecked ? true : false}
+      >
       </input>
       <label className='dream-label'>{props}</label>
     </div>
@@ -39,13 +43,15 @@ const Form = ({props, addDreams}) => {
 
 Form.propTypes = {
   addDreams: func.isRequired,
-  props: string.isRequired
+  props: string.isRequired,
+  chosenDreams: object.isRequired
 };
 
 export default inject(
   ({store}) => {
     return {
-      addDreams: store.addDreams
+      addDreams: store.addDreams,
+      chosenDreams: store.chosenDreams
     };
   }
 )(
