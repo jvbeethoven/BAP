@@ -8,6 +8,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 import Home from './Home';
 import Add from './Add';
 import Back from './Back';
+import Kinderwens from './Kinderwens';
 
 const App = ({isDreaming, changeButton}) => {
 
@@ -22,9 +23,12 @@ const App = ({isDreaming, changeButton}) => {
       {/* {process.env.NODE_ENV !== `production` ? <DevTools /> : null} */}
 
       <header className='header'>
-        <Link className='header-home' to='/' onClick={showButton}> {isDreaming ? `Terug naar` : ``}  Toekomst inspiratie</Link>
-        {/* <div className='header-title'>Toekomstmuziek</div> */}
-        {isDreaming ? `` : <Link className='header-create' to={`/Add`} onClick={removeButton}> Creëer jouw toekomst </Link>}
+        <Link className='header-home' to='/' onClick={showButton}> {isDreaming ? `Terug naar` : ``}  Toekomstmuziek</Link>
+        <div>
+          <Link className='header-info' to={`/Kinderwens`} onClick={showButton}>Kinderwens</Link>
+          {/* <div className='header-title'>Toekomstmuziek</div> */}
+          {isDreaming ? `` : <Link className='header-create' to={`/Add`} onClick={removeButton}> Creëer jouw toekomst </Link>}
+        </div>
       </header>
 
       <section className='body'>
@@ -32,6 +36,10 @@ const App = ({isDreaming, changeButton}) => {
           <Route
             exact path='/'
             component={Home}
+          />
+          <Route
+            exact path='/Kinderwens'
+            component={Kinderwens}
           />
           <Route
             exact path='/Add'

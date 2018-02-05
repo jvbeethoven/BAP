@@ -29,8 +29,8 @@ const Back = ({store}) => {
   console.log(`Gekozen bericht ${message}`);
 
   const handleSubmit = e => {
-    console.log(`submit`);
     e.preventDefault();
+    console.log(`data verzenden`);
   };
 
   return (
