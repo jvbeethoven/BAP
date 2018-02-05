@@ -28314,6 +28314,10 @@ var Add = function Add(_ref) {
       sex = store.sex;
 
 
+  if (sex) {
+    var sexChosen = true;
+  }
+
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
     console.log('submit');
@@ -28327,21 +28331,21 @@ var Add = function Add(_ref) {
     'section',
     { className: 'card', __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 31
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'card-chosen', __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 32
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h1',
         { className: 'card-title', __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 33
           }
         },
         '#toekomstmuziek'
@@ -28350,13 +28354,13 @@ var Add = function Add(_ref) {
         'div',
         { className: 'dreams-chosen', __source: {
             fileName: _jsxFileName,
-            lineNumber: 30
+            lineNumber: 34
           }
         },
         chosenDreams.map(function (d) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_Dream__["a" /* default */], { key: d, props: d, __source: {
               fileName: _jsxFileName,
-              lineNumber: 32
+              lineNumber: 36
             }
           });
         }),
@@ -28364,12 +28368,12 @@ var Add = function Add(_ref) {
           'div',
           { className: 'dreams-you', __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 38
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: sex ? '../assets/img/' + sex + '-person.png' : '', className: 'dreams-you-img', __source: {
               fileName: _jsxFileName,
-              lineNumber: 35
+              lineNumber: 39
             }
           })
         ),
@@ -28377,21 +28381,21 @@ var Add = function Add(_ref) {
           'p',
           { className: 'dreams-title', __source: {
               fileName: _jsxFileName,
-              lineNumber: 37
+              lineNumber: 41
             }
           },
           'Mijn',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 37
+              lineNumber: 41
             }
           }),
           'toekomst ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 37
+              lineNumber: 41
             }
           }),
           'dromen'
@@ -28402,21 +28406,21 @@ var Add = function Add(_ref) {
       'form',
       { className: 'dreams-options', onSubmit: handleSubmit, __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 46
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'dreams-options-section dreams-options-sex', __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 47
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           { className: 'dreams-question', __source: {
               fileName: _jsxFileName,
-              lineNumber: 44
+              lineNumber: 48
             }
           },
           'Stap 1: wie ben jij?'
@@ -28425,30 +28429,9 @@ var Add = function Add(_ref) {
           'div',
           { className: 'sex-section', __source: {
               fileName: _jsxFileName,
-              lineNumber: 45
+              lineNumber: 49
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 46
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
-                return handleChangeSex('female');
-              }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 47
-              }
-            }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'female-label sex-label', htmlFor: 'female', __source: {
-                fileName: _jsxFileName,
-                lineNumber: 48
-              }
-            })
-          ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             {
@@ -28458,15 +28441,36 @@ var Add = function Add(_ref) {
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
-                return handleChangeSex('male');
-              }, className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', __source: {
+                return handleChangeSex('female');
+              }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
                 fileName: _jsxFileName,
                 lineNumber: 51
               }
             }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'male-label sex-label', htmlFor: 'male', __source: {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'female-label sex-label', htmlFor: 'female', __source: {
                 fileName: _jsxFileName,
                 lineNumber: 52
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'div',
+            {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 54
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
+                return handleChangeSex('male');
+              }, className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 55
+              }
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('label', { className: 'male-label sex-label', htmlFor: 'male', __source: {
+                fileName: _jsxFileName,
+                lineNumber: 56
               }
             })
           )
@@ -28476,14 +28480,14 @@ var Add = function Add(_ref) {
         'div',
         { className: 'dreams-options-section dreams-options-items', __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 61
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           { className: 'dreams-question', __source: {
               fileName: _jsxFileName,
-              lineNumber: 58
+              lineNumber: 62
             }
           },
           'Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?'
@@ -28491,7 +28495,7 @@ var Add = function Add(_ref) {
         dreams.map(function (d) {
           return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Form__["a" /* default */], { key: d, props: d, __source: {
               fileName: _jsxFileName,
-              lineNumber: 59
+              lineNumber: 63
             }
           });
         })
@@ -28500,12 +28504,12 @@ var Add = function Add(_ref) {
         __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Link */],
         { to: '/Back', className: 'dreams-submit', __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 65
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'submit', className: 'submit-dreams', value: 'Naar de toekomst', __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 66
           }
         })
       )
@@ -29640,4 +29644,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.99aae0b8691413f50a48.js.map
+//# sourceMappingURL=main.c917b01b11f5ac95d5a0.js.map

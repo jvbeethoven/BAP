@@ -28438,7 +28438,7 @@ var Add = function Add(_ref) {
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
                 return handleChangeSex('female');
-              }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', __source: {
+              }, className: 'female input sex-input', type: 'radio', name: 'sex', value: 'female', defaultChecked: sex === 'female' ? true : false, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 47
               }
@@ -28459,7 +28459,7 @@ var Add = function Add(_ref) {
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { onChange: function onChange() {
                 return handleChangeSex('male');
-              }, className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', __source: {
+              }, className: 'male input sex-input', type: 'radio', name: 'sex', value: 'male', defaultChecked: sex === 'male' ? true : false, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 51
               }
@@ -28641,14 +28641,13 @@ var Dream = function Dream(_ref) {
   var imgSrc = '../assets/img/' + props + '.png';
 
   console.log(chosenDreams);
-  var id = chosenDreams.indexOf(props);
-  console.log(id);
+  var id = chosenDreams.indexOf(props) + 1;
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     { className: 'dream-item dream-item-' + id, __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 15
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', {
@@ -28657,14 +28656,14 @@ var Dream = function Dream(_ref) {
       src: imgSrc,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 16
       }
     }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'p',
       { className: 'dream-label', __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         }
       },
       props
@@ -29641,4 +29640,4 @@ var Card = function Card(_ref) {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.258b0afe7a01db2ff985.js.map
+//# sourceMappingURL=main.136aa1c57ec66b054167.js.map

@@ -44,11 +44,11 @@ const Add = ({store}) => {
           <p className='dreams-question'>Stap 1: wie ben jij?</p>
           <div className='sex-section'>
             <div>
-              <input onChange={() => handleChangeSex(`female`)} className='female input sex-input' type='radio' name='sex' value='female' />
+              <input onChange={() => handleChangeSex(`female`)} className='female input sex-input' type='radio' name='sex' value='female' defaultChecked={sex === `female` ? true : false} />
               <label className='female-label sex-label' htmlFor='female'></label>
             </div>
             <div>
-              <input onChange={() => handleChangeSex(`male`)} className='male input sex-input' type='radio' name='sex' value='male' />
+              <input onChange={() => handleChangeSex(`male`)} className='male input sex-input' type='radio' name='sex' value='male' defaultChecked={sex === `male` ? true : false} />
               <label className='male-label sex-label' htmlFor='male'></label>
             </div>
           </div>
