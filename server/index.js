@@ -2,11 +2,24 @@ const Hapi = require(`hapi`);
 const inert = require(`inert`);
 const Path = require(`path`);
 
-// const {
-//   PORT = 3000,
-//   URL = `http://localhost`,
-//   MONGO_URL
-// } = process.env;
+// const server = new Hapi.Server();
+// server.connection({port: 3000, host: `localhost`});
+//
+// server.route({
+//     method: 'GET',
+//     path: '/',
+//     handler: function (request, reply) {
+//         reply('Hapi World!');
+//     }
+// });
+//
+// server.start((err) => {
+//
+//     if (err) {
+//         throw err;
+//     }
+//     console.log(`Server running at: ${server.info.uri}`);
+// });
 
 const server = new Hapi.Server({
   port: 3000,

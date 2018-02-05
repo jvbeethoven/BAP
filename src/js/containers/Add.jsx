@@ -29,7 +29,6 @@ const Add = ({store}) => {
         <h1 className='card-title'>#toekomstmuziek</h1>
         <div className='dreams-chosen'>
           {chosenDreams.map(d =>
-            // console.log(d)
             <Dream key={d} props={d} />
           )}
           <div className='dreams-you'>

@@ -3,21 +3,18 @@
 import React from 'react';
 import {inject, observer} from 'mobx-react';
 import {string, object} from 'prop-types';
-let lastId = 0;
 
 const Dream = ({props, chosenDreams}) => {
 
   const imgSrc = `../assets/img/${props}.png`;
 
-  // for (let i = 0;i < 25;i ++) {
-  lastId ++;
-  // }
   console.log(chosenDreams);
+  const id = chosenDreams.indexOf(props) + 1;
 
   return (
-    <div className={`dream-item dream-item-${  lastId}`}>
+    <div className={`dream-item dream-item-${  id}`}>
       <img
-        className={`dream-img dream-img-${  lastId}`}
+        className={`dream-img dream-img-${  id}`}
         alt={props}
         src={imgSrc}
       ></img>
