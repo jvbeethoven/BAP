@@ -13,15 +13,13 @@ body {
 }
 
 header {
-  /* margin: 0 0 2rem; */
   padding: 2rem 4rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* max-height: 10vh; */
   height: 10%;
-  background-color: var(--yellowBG2);
+  background-color: var(--purple);
 }
 
 footer {
@@ -49,19 +47,6 @@ footer {
 
 }
 
-/* .header {
-   kan create niet aanspreken
-  &-create {
-    min-width: 5rem;
-    min-height: 3rem;
-    background-color: var(--yellow);
-  }
-
-  &-home {
-    color: blue;
-  }
-} */
-
 .header-create {
   min-width: 5rem;
   min-height: 3rem;
@@ -76,25 +61,21 @@ footer {
   width: 100vw;
   height: 94vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
+  background-color: var(--purple);
 }
 
 .dreams-options {
   width: 25vw;
   height: 100%;
-  background-color: var(--purple);
-  padding: 3rem 5rem 3rem 8rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10rem 0;
 
 }
-/*
-.dreams-options-section {
-  padding: 2rem 0;
-} */
 
 .dreams-question {
   color: var(--yellow);
@@ -106,8 +87,8 @@ footer {
 }
 
 .dreams-you {
-  width: 26rem;
-  height: 31rem;
+  width: 30rem;
+  height: 40rem;
   background-color: var(--lightPink);
 
   position: absolute;
@@ -115,8 +96,9 @@ footer {
   top: 34%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .dreams-you-img {
@@ -163,8 +145,8 @@ input[type=checkbox]:checked + .dream-label {
 }
 
 .submit-dreams {
-  max-width: 30rem;
-  margin: 3rem 0;
+  width: 100%;
+  max-width: 40rem;
   padding: 1.5rem 2.5rem;
   background: var(--yellow);
   cursor: pointer;
@@ -176,10 +158,12 @@ input[type=checkbox]:checked + .dream-label {
 }
 
 .card-chosen {
-  width: 75vw;
-  height: 100%;
+  width: 60%;
+  height: 80%;
   position: relative;
-  background-color: var(--yellowBG);
+  align-self: center;
+  background-color: var(--purple);
+  box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4);
 }
 
 .card-title {
@@ -269,6 +253,15 @@ input[type=checkbox]:checked + .dream-label {
   outline: 0;
 }
 
+.dreams-options-sex {
+  display: flex;
+  padding: 2rem;
+}
+
+.dreams-options-wrapper {
+  align-items: center;
+}
+
 .female {
   background: url(../assets/img/female.png) no-repeat;
   width: 9.1rem;
@@ -286,18 +279,14 @@ input[type=checkbox]:checked + .dream-label {
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 100px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
   transition: all 100ms ease-in;
   filter: brightness(1.8) grayscale(1) opacity(.7);
 }
 
 .input:hover {
   filter: brightness(1.2) grayscale(.5) opacity(.9);
-}
-
-.sex-section {
-  display: flex;
 }
 
 input[type='radio']:checked {
