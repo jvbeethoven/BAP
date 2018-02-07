@@ -124,7 +124,7 @@ footer {
   max-height: 25rem;
 }
 
-.checkbox {
+/* .checkbox {
   width: 1.3em;
   height: 1.3em;
   background-color: var(--purple);
@@ -143,6 +143,23 @@ footer {
 
 .dream-label {
   color: white;
+} */
+
+/*
+.checkbox {
+  appearance: none;
+} */
+
+input[type=checkbox] + .dream-label {
+  background: url(../assets/img/icons/diploma.png) no-repeat;
+  background-size: 1rem;
+  padding: 0 1rem;
+}
+
+input[type=checkbox]:checked + .dream-label {
+  background: url(../assets/img/icons/geld-selected.png) no-repeat;
+  background-size: 1rem;
+  padding: 0 1rem;
 }
 
 .submit-dreams {
