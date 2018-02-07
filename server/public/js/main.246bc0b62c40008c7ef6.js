@@ -7158,7 +7158,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__containers_App__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores__ = __webpack_require__(87);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/script.js';
@@ -24461,7 +24461,7 @@ module.exports = camelize;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Home__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Add__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Back__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Kinderwens__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Kinderwens__ = __webpack_require__(86);
 var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/App.jsx';
 
 
@@ -24514,29 +24514,38 @@ var App = function App(_ref) {
         '  Toekomstmuziek'
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Link */],
-        { className: 'header-info', to: '/Kinderwens', onClick: showButton, __source: {
+        'div',
+        {
+          __source: {
             fileName: _jsxFileName,
             lineNumber: 27
           }
         },
-        'Kinderwens'
-      ),
-      isDreaming ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Link */],
-        { className: 'header-create', to: '/Add', onClick: removeButton, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 29
-          }
-        },
-        ' Cre\xEBer jouw toekomst '
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Link */],
+          { className: 'header-info', to: '/Kinderwens', onClick: showButton, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 28
+            }
+          },
+          'Kinderwens'
+        ),
+        isDreaming ? '' : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_3_react_router_dom__["b" /* Link */],
+          { className: 'header-create', to: '/Add', onClick: removeButton, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            }
+          },
+          ' Cre\xEBer jouw toekomst '
+        )
       )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'section',
       { className: 'body', __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -24544,7 +24553,7 @@ var App = function App(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 35
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Route */], {
@@ -24552,15 +24561,15 @@ var App = function App(_ref) {
           component: __WEBPACK_IMPORTED_MODULE_4__Home__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 34
+            lineNumber: 36
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Route */], {
-          exact: true, path: '/',
+          exact: true, path: '/Kinderwens',
           component: __WEBPACK_IMPORTED_MODULE_7__Kinderwens__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 38
+            lineNumber: 40
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Route */], {
@@ -24568,7 +24577,7 @@ var App = function App(_ref) {
           component: __WEBPACK_IMPORTED_MODULE_5__Add__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 42
+            lineNumber: 44
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_router_dom__["c" /* Route */], {
@@ -24576,7 +24585,7 @@ var App = function App(_ref) {
           component: __WEBPACK_IMPORTED_MODULE_6__Back__["a" /* default */],
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
+            lineNumber: 48
           }
         })
       )
@@ -24586,7 +24595,7 @@ var App = function App(_ref) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 54
         }
       },
       ' Copyright \xA9 2018 Hogeschool Vives. All rights reserved. '
@@ -28849,7 +28858,33 @@ Back.propTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/Kinderwens.jsx';
+
+
+var Kinderwens = function Kinderwens() {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    'p',
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 4
+      }
+    },
+    'Info over kinderwens vlaanderen'
+  );
+};
+
+Kinderwens.displayName = 'Kinderwens';
+/* harmony default export */ __webpack_exports__["a"] = (Kinderwens);
+
+/***/ }),
+/* 87 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(88);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
@@ -28857,13 +28892,13 @@ Back.propTypes = {
 });
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_Card__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_Card__ = __webpack_require__(92);
 var _desc, _value, _class, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15;
 
 function _initDefineProp(target, property, descriptor, context) {
@@ -29099,11 +29134,11 @@ if (process.env.NODE_ENV !== 'production') {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_isomorphic_fetch__);
 
 
@@ -29134,19 +29169,19 @@ var url = '/api/cards';
 });
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // the whatwg-fetch polyfill installs the fetch() function
 // on the global object (window or self)
 //
 // Return that as the export for use in Webpack, Browserify etc.
-__webpack_require__(90);
+__webpack_require__(91);
 module.exports = self.fetch.bind(self);
 
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports) {
 
 (function(self) {
@@ -29613,7 +29648,7 @@ module.exports = self.fetch.bind(self);
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29657,36 +29692,6 @@ var Card = function Card(_ref) {
 
 
 
-/***/ }),
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/Users/jvb/Desktop/BAP/code/src/js/containers/Kinderwens.jsx';
-
-
-var Kinderwens = function Kinderwens() {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      }
-    },
-    'Info over kinderwens vlaanderen'
-  );
-};
-
-Kinderwens.displayName = 'Kinderwens';
-/* harmony default export */ __webpack_exports__["a"] = (Kinderwens);
-
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.c09cb339db834b0cfea7.js.map
+//# sourceMappingURL=main.246bc0b62c40008c7ef6.js.map
