@@ -93,7 +93,7 @@ footer {
 
   position: absolute;
   left: 33%;
-  top: 34%;
+  top: 37%;
 
   display: flex;
   flex-direction: column;
@@ -173,19 +173,27 @@ input[type=checkbox]:checked + .dream-label {
   color: var(--purple);
   font-size: 3rem;
   font-weight: bold;
-  top: 30%;
+  top: 34%;
   left: 8%;
 }
 
 .dreams-title {
   position: absolute;
   top: 11%;
-  right: 32%;
+  left: 42%;
   background-color: var(--lightPink);
   padding: 1rem;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bold;
   color: var(--purple);
+}
+
+.dreams-title-2 {
+  top: 19%;
+}
+
+.dreams-title-3 {
+  top: 26%;
 }
 
 .dream-img {
@@ -202,8 +210,8 @@ input[type=checkbox]:checked + .dream-label {
 
 .dream-item-1 {
   position: absolute;
-  top: 12%;
-  left: 29%;
+  top: 10%;
+  left: 18%;
   width: 24rem;
   height: 18rem;
   background-color: var(--pink);
@@ -212,17 +220,17 @@ input[type=checkbox]:checked + .dream-label {
 
 .dream-item-2 {
   position: absolute;
-  top: 13%;
-  right: 19%;
-  background-color: var(--purple);
-  width: 14rem;
-  height: 14rem;
+  top: 11%;
+  right: 22%;
+  background-color: var(--yellow);
+  width: 17rem;
+  height: 17rem;
 }
 
 .dream-item-3 {
   position: absolute;
-  bottom: 42%;
-  left: 8%;
+  bottom: 35%;
+  left: 5%;
   background-color: var(--yellow);
   width: 28rem;
   height: 16rem;
@@ -230,8 +238,8 @@ input[type=checkbox]:checked + .dream-label {
 
 .dream-item-4 {
   position: absolute;
-  top: 29%;
-  right: 7%;
+  top: 38%;
+  right: 13%;
   background-color: var(--blue);
   width: 26rem;
   height: 16rem;
@@ -239,8 +247,8 @@ input[type=checkbox]:checked + .dream-label {
 
 .dream-item-5 {
   position: absolute;
-  top: 42%;
-  right: 29%;
+  bottom: 20%;
+  right: 17%;
   background-color: var(--reddish);
   width: 19rem;
   height: 15rem;

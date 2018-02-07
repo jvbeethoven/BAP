@@ -44,7 +44,9 @@ const Add = ({store}) => {
               </div>
             </div>
           </div>
-          <p className='dreams-title'>Mijn<br />toekomst <br />dromen</p>
+          <p className='dreams-title dreams-title-1'>Mijn</p>
+          <p className='dreams-title dreams-title-2'>Toekomst</p>
+          <p className='dreams-title dreams-title-3'>Dromen</p>
         </div>
 
       </div>

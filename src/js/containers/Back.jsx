@@ -33,9 +33,23 @@ const Back = ({store}) => {
     console.log(`data verzenden`);
   };
 
+  const handleChange = e => {
+    e.preventDefault();
+    const message = document.querySelector(`.dreams-answer`).innerHTML;
+    console.log(message);
+  };
+
   return (
     <section className='card'>
       <div className='card-chosen'>
+        <div className='card-content'>
+          <div className='card-content-chosenDreams'></div>
+          <div className='card-content-addedText'></div>
+        </div>
+        <div className='card-user-info'>
+          <img className='stamp'></img>
+          <p className='chosenMessage'>{message}</p>
+        </div>
 
       </div>
       <form className='dreams-options' onSubmit={handleSubmit}>
@@ -45,7 +59,7 @@ const Back = ({store}) => {
         </div>
         <div className='dreams-options-section dreams-options-items'>
           <p className='dreams-question'>WELKE BOODSCHAP WIL JE DELEN?</p>
-          <input type='text' onSubmit={handleSubmit}></input>
+          <input type='text' className='dreams-answer' onSubmit={handleSubmit} onChange={handleChange}></input>
 
         </div>
         <div className='dreams-buttons'>
