@@ -1,7 +1,7 @@
 import React from 'react';
 // import Form from '../components/Form';
 // import Dream from '../components/Dream';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {
   inject,
   observer,
@@ -28,17 +28,6 @@ const Back = ({store}) => {
 
   console.log(`Gekozen bericht ${message}`);
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    console.log(`data verzenden`);
-  };
-
-  const handleChange = e => {
-    e.preventDefault();
-    const message = document.querySelector(`.dreams-answer`).innerHTML;
-    console.log(message);
-  };
-
   return (
     <section className='card'>
       <div className='card-chosen'>
@@ -50,25 +39,7 @@ const Back = ({store}) => {
           <img className='stamp'></img>
           <p className='chosenMessage'>{message}</p>
         </div>
-
       </div>
-      <form className='dreams-options' onSubmit={handleSubmit}>
-        <div className='dreams-options-section dreams-options-sex'>
-          <p className='dreams-question'>Wat is jouw emailadres?</p>
-          <input type='text' onSubmit={handleSubmit}></input>
-        </div>
-        <div className='dreams-options-section dreams-options-items'>
-          <p className='dreams-question'>WELKE BOODSCHAP WIL JE DELEN?</p>
-          <input type='text' className='dreams-answer' onSubmit={handleSubmit} onChange={handleChange}></input>
-
-        </div>
-        <div className='dreams-buttons'>
-          <Link to={`/Add`} className='dreams-submit'>Back</Link>
-          {/* <Link to={`/Back`} className='dreams-submit'> */}
-          <input type='submit' className='submit-dreams' value='Verzenden'></input>
-          {/* </Link> */}
-        </div>
-      </form>
     </section>
   );
 };

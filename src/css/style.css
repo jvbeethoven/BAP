@@ -122,26 +122,24 @@ footer {
 .checkbox:checked {
   background-color: var(--yellow);
 }
+*/
 
-.dream-label {
-  color: white;
-} */
+/* .dream-label { min-height: 2rem; } */
 
-/*
-.checkbox {
+input[type=checkbox] {
   appearance: none;
-} */
-
-input[type=checkbox] + .dream-label {
+  width: 2rem;
+  height: 2rem;
+  outline: 0;
   background: url(../assets/img/icons/diploma.png) no-repeat;
-  background-size: 1rem;
-  padding: 0 1rem;
+  background-size: 2rem;
+  display: inline-block;
 }
 
-input[type=checkbox]:checked + .dream-label {
+input[type=checkbox]:checked {
   background: url(../assets/img/icons/geld-selected.png) no-repeat;
-  background-size: 1rem;
-  padding: 0 1rem;
+  background-size: 2rem;
+  display: inline-block;
 }
 
 .submit-dreams {
