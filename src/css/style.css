@@ -106,26 +106,6 @@ footer {
   max-height: 25rem;
 }
 
-/* .checkbox {
-  width: 1.3em;
-  height: 1.3em;
-  background-color: var(--purple);
-  border-radius: 50%;
-  vertical-align: middle;
-  border: .2rem solid var(--yellow);
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-  margin: .6rem;
-}
-
-.checkbox:checked {
-  background-color: var(--yellow);
-}
-*/
-
-/* .dream-label { min-height: 2rem; } */
-
 input[type=checkbox] {
   appearance: none;
   width: 2rem;

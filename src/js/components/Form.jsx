@@ -10,6 +10,7 @@ const Form = ({props, addDreams, chosenDreams}) => {
 
   const handleChange = () => {
     const checkgroup = document.querySelectorAll(`.checkbox`);
+    const errorMsg = document.querySelector(`.dreams-error`);
     const item = document.getElementById(props);
     const limit = 5;
 
@@ -21,6 +22,9 @@ const Form = ({props, addDreams, chosenDreams}) => {
       if (checkedcount > limit) {
         console.log(`You can only select a maximum of ${limit  } checkboxes`);
         item.checked = false;
+        errorMsg.innerHTML = `Je kan maar maximum 5 dromen waarmaken :)`;
+      } else {
+        errorMsg.innerHTML = ``;
       }
     }
   };
