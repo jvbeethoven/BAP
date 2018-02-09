@@ -9,14 +9,19 @@ export default {
       .then(r => r.json());
   },
 
-  insert: (email, message, informationId, dreamsId, personId) => {
+  insert: (email, message, informationId, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, years, person) => {
     const method = `POST`;
     const body = new FormData();
     body.append(`email`, email);
     body.append(`message`, message);
     body.append(`informationId`, informationId);
-    body.append(`dreamsId`, dreamsId);
-    body.append(`personId`, personId);
+    body.append(`years`, years);
+    body.append(`dreamOne`, dreamOne);
+    body.append(`dreamTwo`, dreamTwo);
+    body.append(`dreamThree`, dreamThree);
+    body.append(`dreamFour`, dreamFour);
+    body.append(`dreamFive`, dreamFive);
+    body.append(`person`, person);
 
     return fetch(url, {method, body})
       .then(r => r.json());

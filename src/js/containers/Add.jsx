@@ -56,7 +56,7 @@ const Add = ({store}) => {
           <p className='dreams-question'>Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?</p>
           <p className='dreams-error'></p>
           <div className='dreams-checkbox-options'>
-            {dreams.map(d => <Form key={d} props={d} />)}
+            {dreams.map(d => <Form key={d.name} props={d.name} />)}
           </div>
         </div>
         <Link to={`/Back`} className='dreams-submit'>
@@ -75,5 +75,3 @@ Add.propTypes = {
 export default inject(`store`)(
   observer(Add)
 );
-//
-// export default Add;

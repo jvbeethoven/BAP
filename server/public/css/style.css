@@ -48,14 +48,12 @@ table {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
 *, *::before, *::after { /* stylelint-disable-line */
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 :root {
@@ -77,16 +75,13 @@ body {
 header {
   padding: 20px 40px;
   padding: 2rem 4rem;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
   height: 10%;
   /* background-color: var(--purple); */
 }
@@ -96,31 +91,23 @@ footer {
   min-height: 50px;
   min-height: 5rem;
   background-color: rgba(255, 213, 22, .3);
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .wrapper {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   height: 100vh;
 }
 
@@ -149,14 +136,12 @@ footer {
 .card {
   width: 100vw;
   height: 94vh;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
   /* background-color: var(--purple); */
 }
 
@@ -164,18 +149,13 @@ footer {
   width: 25vw;
   height: 100%;
 
-  display: -webkit-box;
-
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 100px 0;
   padding: 10rem 0;
 
@@ -205,21 +185,15 @@ footer {
   left: 33%;
   top: 37%;
 
-  display: -webkit-box;
-
   display: -ms-flexbox;
 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .dreams-you-img {
@@ -230,7 +204,6 @@ footer {
 }
 
 .dreams-checkbox-options {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -257,18 +230,14 @@ footer {
 }
 
 .checkbox-wrapper {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 15px;
   padding: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .checkbox:checked {
@@ -416,6 +385,7 @@ footer {
   height: 80%;
   position: relative;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   background-color: #5603ad;
   /* border: 3rem solid var(--purple); */
@@ -464,19 +434,14 @@ footer {
 }
 
 .dream-item {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .dream-item-1 {
@@ -545,7 +510,6 @@ footer {
 }
 
 .dreams-options-sex {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
@@ -553,9 +517,8 @@ footer {
 }
 
 .dreams-options-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .female {
@@ -583,7 +546,6 @@ footer {
   width: 7rem;
   height: 70px;
   height: 7rem;
-  -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.8" /><feFuncG type="linear" slope="1.8" /><feFuncB type="linear" slope="1.8" /></feComponentTransfer><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncA type="table" tableValues="0 0.7" /></feComponentTransfer></filter></svg>#filter');
   -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
