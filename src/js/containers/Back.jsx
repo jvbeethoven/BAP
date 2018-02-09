@@ -17,6 +17,9 @@ const Back = ({store}) => {
   let $email, $message, $years;
   const randomMsg = information[Math.floor(Math.random() * information.length)];
 
+  console.log(chosenDreams);
+  console.log(sex);
+
   const handleSubmit = e => {
     e.preventDefault();
     if (email && message && years) {

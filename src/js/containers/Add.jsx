@@ -14,12 +14,15 @@ const Add = ({store}) => {
     dreams, chosenDreams, changeSex, sex, formComplete, completeForm
   } = store;
 
+  let $error;
+
   const handleSubmit = e => {
     e.preventDefault();
     if (chosenDreams.length === 5 && sex) {
       completeForm(true);
     } else {
-      console.log(`submit`);
+      $error.innerHTML = `Vergeet jouw geslacht en vijf toekomstdromen niet in te vullen!`;
+      console.log($error);
       completeForm(false);
     }
   };
@@ -65,6 +68,7 @@ const Add = ({store}) => {
           </div>
         </div>
         {/* <Link to={`/Back`} className='dreams-submit'> */}
+          <p className='error-message' ref={$el => $error = $el}></p>
           <input type='submit' className='submit-dreams' value='Naar de toekomst &rarr;'></input>
         {/* </Link> */}
         {formComplete ? <Redirect to={`/Back`} /> : ``}
