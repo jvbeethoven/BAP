@@ -1,6 +1,7 @@
 export default class Information {
 
   message = ``
+  tag = ``
   created = ``
   modified = ``
   _id = ``
@@ -9,6 +10,7 @@ export default class Information {
 
   constructor({
     message,
+    tag,
     _id,
     created,
     modified,
@@ -16,6 +18,7 @@ export default class Information {
   }) {
 
     this.message = message;
+    this.tag = tag;
     this._id = _id;
     this.created = created;
     this.isActive = isActive;

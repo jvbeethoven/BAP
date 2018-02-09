@@ -6,6 +6,12 @@ const schema = {
     type: String,
     required: true,
     validation: Joi.string().min(1)
+  },
+
+  tag: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
   }
 
 };

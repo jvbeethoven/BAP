@@ -13,17 +13,33 @@ const Back = ({store}) => {
   const {
     chosenDreams, sex, email, years, message, information, setEmail, setMessage, setYears, add, finalizeForm, backComplete
   } = store;
+  let $email, $message, $years, randomMessage;
+  const randomMsg = chosenDreams[Math.floor(Math.random() * chosenDreams.length)];
 
-  let $email, $message, $years;
-  const randomMsg = information[Math.floor(Math.random() * information.length)];
+  const containsChildren = item => {
+    return item === `Kinderen`;
+  };
 
-  console.log(chosenDreams);
-  console.log(sex);
+  const test = chosenDreams.find(containsChildren);
+
+  if (typeof test !== `undefined`) {
+    console.log(`children`);
+    const findMessage = information.find(item => {
+      return item.tag === `kinderen`;
+    });
+    randomMessage = findMessage.message;
+  } else {
+    const testMessage = randomMsg.toString().toLowerCase();
+    const findMessage = information.find(item => {
+      return item.tag === testMessage;
+    });
+    randomMessage = findMessage.message;
+  }
 
   const handleSubmit = e => {
     e.preventDefault();
     if (email && message && years) {
-      add(email, message, randomMsg.message, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
+      add(email, message, `test`, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
       finalizeForm(true);
     } else {
       finalizeForm(false);
@@ -50,7 +66,7 @@ const Back = ({store}) => {
             <input type='number' ref={$el => $years = $el} onChange={handleYears} />
             <p>jaar ben ik 35</p>
             <div className='card-content-chosenDreams'></div>
-            <div className='card-content-addedText'></div>
+            <div className='card-content-addedText'>{randomMessage}</div>
           </div>
           <div className='card-user-info'>
             <img className='stamp'></img>

@@ -9,10 +9,11 @@ export default {
       .then(r => r.json());
   },
 
-  create: message => {
+  create: (message, tag) => {
     const method = `POST`;
     const body = new FormData();
     body.append(`message`, message);
+    body.append(`tag`, tag);
 
     return fetch(url, {method, body})
       .then(r => r.json());
