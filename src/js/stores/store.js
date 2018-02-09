@@ -21,6 +21,9 @@ class Store {
   message = ``
 
   @observable
+  years = ``
+
+  @observable
   maxSelected = false;
 
   @observable
@@ -47,32 +50,24 @@ class Store {
   init = () => {
     cardsAPI.select()
     .then(({cards}) => {
-      console.log(cards);
       this._add(...cards);
     });
 
     dreamsAPI.select()
     .then(({dreams}) => {
-      console.log(dreams);
       this._addDreams(...dreams);
     });
 
     informationAPI.select()
     .then(({information}) => {
-      console.log(information);
       this._addInformation(...information);
     });
-
-    console.log(this.dreams);
-    console.log(this.cards);
-    console.log(this.information);
   }
 
-
-  add = content => {
-    console.log(content);
-    // cardsAPI.insert(content)
-    //   .then(card => this._add(card));
+  add = (email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex) => {
+    console.log(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex);
+    cardsAPI.create(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex)
+      .then(this._add);
   }
 
   @action
@@ -146,6 +141,21 @@ class Store {
   @action
   completeForm = bool => {
     this.formComplete = bool;
+  }
+
+  @action
+  setEmail = email => {
+    this.email = email;
+  }
+
+  @action
+  setMessage = message => {
+    this.message = message;
+  }
+
+  @action
+  setYears = years => {
+    this.years = years;
   }
 
 }

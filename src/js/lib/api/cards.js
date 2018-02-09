@@ -9,7 +9,7 @@ export default {
       .then(r => r.json());
   },
 
-  insert: (email, message, informationId, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, years, person) => {
+  create: (email, message, informationId, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, years, person) => {
     const method = `POST`;
     const body = new FormData();
     body.append(`email`, email);

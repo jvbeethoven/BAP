@@ -17,7 +17,6 @@ const Add = ({store}) => {
   const handleSubmit = e => {
     e.preventDefault();
     if (chosenDreams.length === 5 && sex) {
-      console.log(formComplete);
       completeForm(true);
     } else {
       console.log(`submit`);

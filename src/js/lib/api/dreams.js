@@ -9,7 +9,7 @@ export default {
       .then(r => r.json());
   },
 
-  insert: (name, imageName) => {
+  create: (name, imageName) => {
     const method = `POST`;
     const body = new FormData();
     body.append(`name`, name);

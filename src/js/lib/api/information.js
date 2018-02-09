@@ -9,7 +9,7 @@ export default {
       .then(r => r.json());
   },
 
-  insert: message => {
+  create: message => {
     const method = `POST`;
     const body = new FormData();
     body.append(`message`, message);
