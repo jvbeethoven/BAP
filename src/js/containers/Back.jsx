@@ -1,7 +1,7 @@
 import React from 'react';
 // import Form from '../components/Form';
 // import Dream from '../components/Dream';
-// import {Link} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {
   inject,
   observer,
@@ -11,7 +11,7 @@ import {
 const Back = ({store}) => {
 
   const {
-    chosenDreams, sex, email, years, message, information, setEmail, setMessage, setYears, add
+    chosenDreams, sex, email, years, message, information, setEmail, setMessage, setYears, add, finalizeForm, backComplete
   } = store;
 
   let $email, $message, $years;
@@ -19,8 +19,12 @@ const Back = ({store}) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    add(email, message, randomMsg.message, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
-    console.log(`added`);
+    if (email && message && years) {
+      add(email, message, randomMsg.message, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
+      finalizeForm(true);
+    } else {
+      finalizeForm(false);
+    }
   };
 
   const handleEmail = () => {
@@ -40,7 +44,7 @@ const Back = ({store}) => {
         <form className='card-chosen' onSubmit={handleSubmit}>
           <div className='card-content'>
             <p>Binnen</p>
-            <input type='text' ref={$el => $years = $el} onChange={handleYears} />
+            <input type='number' ref={$el => $years = $el} onChange={handleYears} />
             <p>jaar ben ik 35</p>
             <div className='card-content-chosenDreams'></div>
             <div className='card-content-addedText'></div>
@@ -54,6 +58,7 @@ const Back = ({store}) => {
             <input className='submit-dreams-form' type='submit' />
           </div>
         </form>
+        {backComplete ? <Redirect to={`/`} /> : ``}
     </section>
   );
 };

@@ -30,6 +30,9 @@ class Store {
   formComplete = false;
 
   @observable
+  backComplete = false;
+
+  @observable
   cards = [];
 
   @observable
@@ -141,6 +144,11 @@ class Store {
   @action
   completeForm = bool => {
     this.formComplete = bool;
+  }
+
+  @action
+  finalizeForm = bool => {
+    this.backComplete = bool;
   }
 
   @action
