@@ -55,7 +55,9 @@ const Add = ({store}) => {
         <div className='dreams-options-section dreams-options-items'>
           <p className='dreams-question'>Stap 2: wat zijn de vijf dingen die je tegen jouw 35ste in jouw leven wil?</p>
           <p className='dreams-error'></p>
-          {dreams.map(d => <Form key={d} props={d} />)}
+          <div className='dreams-checkbox-options'>
+            {dreams.map(d => <Form key={d} props={d} />)}
+          </div>
         </div>
         <Link to={`/Back`} className='dreams-submit'>
           <input type='submit' className='submit-dreams' value='Naar de toekomst &rarr;'></input>

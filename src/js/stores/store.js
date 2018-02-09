@@ -26,7 +26,7 @@ class Store {
   cards = [`1`, `2`, `3`, `4`, `5`];
 
   @observable
-  dreams = [`Job`, `Kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Droomauto`, `Diploma`, `Liefde`, `Trouwen`]
+  dreams = [`Job`, `Kinderen`, `Huis`, `Geluk`, `Geld`, `Huisdier`, `Gezondheid`, `Reizen`, `Auto`, `Diploma`, `Liefde`, `Trouwen`]
 
   @observable
   randomMsgs = [`Leuk dat je kinderen wil, vergeet je eicellen niet in te vriezen!`, `nog een random boodschap`, `nog eentje`]

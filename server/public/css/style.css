@@ -88,7 +88,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 10%;
-  background-color: #5603ad;
+  /* background-color: var(--purple); */
 }
 
 footer {
@@ -157,7 +157,7 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #5603ad;
+  /* background-color: var(--purple); */
 }
 
 .dreams-options {
@@ -229,24 +229,170 @@ footer {
   max-height: 25rem;
 }
 
-input[type=checkbox] {
+.dreams-checkbox-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 20px;
-  width: 2rem;
-  height: 20px;
-  height: 2rem;
+  width: 60px;
+  width: 6rem;
+  height: 60px;
+  height: 6rem;
   outline: 0;
-  background: url(/assets/img/icons/diploma.png) no-repeat;
-  background-size: 2rem;
+  display: inline-block;
+
+  /* &-wrapper {
+    display: flex;
+    flex-direction: column;
+  } */
+}
+
+.checkbox-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  padding: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox:checked {
   display: inline-block;
 }
 
-input[type=checkbox]:checked {
+.check-Job {
+  background: url(/assets/img/icons/job.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Job:checked {
+  background: url(/assets/img/icons/job-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Kinderen {
+  background: url(/assets/img/icons/kinderen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Kinderen:checked {
+  background: url(/assets/img/icons/kinderen-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huis {
+  background: url(/assets/img/icons/huis.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huis:checked {
+  background: url(/assets/img/icons/huis-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geluk {
+  background: url(/assets/img/icons/geluk.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geluk:checked {
+  background: url(/assets/img/icons/geluk-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geld {
+  background: url(/assets/img/icons/geld.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geld:checked {
   background: url(/assets/img/icons/geld-selected.png) no-repeat;
-  background-size: 2rem;
-  display: inline-block;
+  background-size: 6rem;
+}
+
+.check-Huisdier {
+  background: url(/assets/img/icons/huisdier.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huisdier:checked {
+  background: url(/assets/img/icons/huisdier-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Gezondheid {
+  background: url(/assets/img/icons/gezondheid.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Gezondheid:checked {
+  background: url(/assets/img/icons/gezondheid-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Reizen {
+  background: url(/assets/img/icons/reizen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Reizen:checked {
+  background: url(/assets/img/icons/reizen-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Auto {
+  background: url(/assets/img/icons/auto.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Auto:checked {
+  background: url(/assets/img/icons/auto-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Diploma {
+  background: url(/assets/img/icons/diploma.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Diploma:checked {
+  background: url(/assets/img/icons/diploma-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Liefde {
+  background: url(/assets/img/icons/liefde.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Liefde:checked {
+  background: url(/assets/img/icons/liefde-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Trouwen {
+  background: url(/assets/img/icons/trouwen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Trouwen:checked {
+  background: url(/assets/img/icons/trouwen-selected.png) no-repeat;
+  background-size: 6rem;
 }
 
 .submit-dreams {
@@ -272,8 +418,8 @@ input[type=checkbox]:checked {
   -ms-flex-item-align: center;
       align-self: center;
   background-color: #5603ad;
-  -webkit-box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4);
-          box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4);
+  /* border: 3rem solid var(--purple); */
+  /* box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4); */
 }
 
 .card-title {

@@ -30,11 +30,11 @@ const Form = ({props, addDreams, chosenDreams}) => {
   };
 
   return (
-    <div>
+    <div className='checkbox-wrapper'>
       <input
         type='checkbox'
         id={props}
-        className='checkbox'
+        className={`checkbox check-${props}`}
         name='dreams'
         onChange={handleChange}
         defaultChecked={isChecked ? true : false}
