@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from '../components/Form';
 import Dream from '../components/Dream';
-import {Link} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {
   inject,
   observer,
@@ -11,12 +11,18 @@ import {
 const Add = ({store}) => {
 
   const {
-    dreams, chosenDreams, changeSex, sex
+    dreams, chosenDreams, changeSex, sex, formComplete, completeForm
   } = store;
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(`submit`);
+    if (chosenDreams.length === 5 && sex) {
+      console.log(formComplete);
+      completeForm(true);
+    } else {
+      console.log(`submit`);
+      completeForm(false);
+    }
   };
 
   const handleChangeSex = string => {
@@ -59,9 +65,10 @@ const Add = ({store}) => {
             {dreams.map(d => <Form key={d.name} props={d.name} />)}
           </div>
         </div>
-        <Link to={`/Back`} className='dreams-submit'>
+        {/* <Link to={`/Back`} className='dreams-submit'> */}
           <input type='submit' className='submit-dreams' value='Naar de toekomst &rarr;'></input>
-        </Link>
+        {/* </Link> */}
+        {formComplete ? <Redirect to={`/Back`} /> : ``}
       </form>
     </section>
   );

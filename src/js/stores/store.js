@@ -21,10 +21,10 @@ class Store {
   message = ``
 
   @observable
-  isDreaming = false;
+  maxSelected = false;
 
   @observable
-  maxSelected = false;
+  formComplete = false;
 
   @observable
   cards = [];
@@ -139,13 +139,13 @@ class Store {
   }
 
   @action
-  changeButton = bool => {
-    this.isDreaming = bool;
+  changeSex = string => {
+    this.sex = string;
   }
 
   @action
-  changeSex = string => {
-    this.sex = string;
+  completeForm = bool => {
+    this.formComplete = bool;
   }
 
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {bool, func} from 'prop-types';
+import {object} from 'prop-types';
 
 import {inject, observer} from 'mobx-react';
 // import DevTools from 'mobx-react-devtools';
@@ -10,12 +10,7 @@ import Add from './Add';
 import Back from './Back';
 import Kinderwens from './Kinderwens';
 
-const App = ({isDreaming, changeButton}) => {
-
-  const removeButton = () => changeButton(true);
-
-  const showButton = () => changeButton(false);
-
+const App = ({location}) => {
 
   return (
     <section className='wrapper'>
@@ -23,11 +18,10 @@ const App = ({isDreaming, changeButton}) => {
       {/* {process.env.NODE_ENV !== `production` ? <DevTools /> : null} */}
 
       <header className='header'>
-        <Link className='header-home' to='/' onClick={showButton}> {isDreaming ? `Terug naar` : ``}  Toekomstmuziek</Link>
+        <Link className='header-home' to='/' > {location.pathname === `/add` ? `Terug naar` : ``}  Toekomstmuziek</Link>
         <div>
-          <Link className='header-info' to={`/Kinderwens`} onClick={showButton}>Kinderwens</Link>
-          {/* <div className='header-title'>Toekomstmuziek</div> */}
-          {isDreaming ? `` : <Link className='header-create' to={`/Add`} onClick={removeButton}> Creëer jouw toekomst </Link>}
+          <Link className='header-info' to={`/Kinderwens`}>Kinderwens</Link>
+          {location.pathname === `/add` ? `` : <Link className='header-create' to={`/Add`}> Creëer jouw toekomst </Link>}
         </div>
       </header>
 
@@ -51,7 +45,7 @@ const App = ({isDreaming, changeButton}) => {
           />
         </Switch>
       </section>
-      {isDreaming ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>}
+      {location.pathname === `/add` ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>}
 
     </section>
   );
@@ -59,15 +53,9 @@ const App = ({isDreaming, changeButton}) => {
 };
 
 App.propTypes = {
-  isDreaming: bool.isRequired,
-  changeButton: func.isRequired
+  location: object.isRequired
 };
 
-export default inject(
-  ({store}) => ({
-    isDreaming: store.isDreaming,
-    changeButton: store.changeButton
-  })
-)(
+export default inject(`store`)(
   observer(App)
 );
