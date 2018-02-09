@@ -17,19 +17,49 @@ const schema = {
   informationId: {
     type: String,
     required: true,
-    validation: Joi.string()
+    validation: Joi.string().min(1)
   },
 
-  dreamsId: {
-    type: Array,
-    required: true,
-    validation: Joi.array()
-  },
-
-  personId: {
+  years: {
     type: String,
     required: true,
-    validation: Joi.string()
+    validation: Joi.string().min(1)
+  },
+
+  dreamOne: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
+  },
+
+  dreamTwo: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
+  },
+
+  dreamThree: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
+  },
+
+  dreamFour: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
+  },
+
+  dreamFive: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
+  },
+
+  person: {
+    type: String,
+    required: true,
+    validation: Joi.string().min(1)
   }
 
 };

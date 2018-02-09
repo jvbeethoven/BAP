@@ -13,15 +13,13 @@ body {
 }
 
 header {
-  /* margin: 0 0 2rem; */
   padding: 2rem 4rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* max-height: 10vh; */
   height: 10%;
-  background-color: var(--yellowBG2);
+  /* background-color: var(--purple); */
 }
 
 footer {
@@ -49,19 +47,6 @@ footer {
 
 }
 
-/* .header {
-   kan create niet aanspreken
-  &-create {
-    min-width: 5rem;
-    min-height: 3rem;
-    background-color: var(--yellow);
-  }
-
-  &-home {
-    color: blue;
-  }
-} */
-
 .header-create {
   min-width: 5rem;
   min-height: 3rem;
@@ -76,25 +61,21 @@ footer {
   width: 100vw;
   height: 94vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
+  /* background-color: var(--purple); */
 }
 
 .dreams-options {
   width: 25vw;
   height: 100%;
-  background-color: var(--purple);
-  padding: 3rem 5rem 3rem 8rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10rem 0;
 
 }
-/*
-.dreams-options-section {
-  padding: 2rem 0;
-} */
 
 .dreams-question {
   color: var(--yellow);
@@ -106,17 +87,18 @@ footer {
 }
 
 .dreams-you {
-  width: 26rem;
-  height: 31rem;
+  width: 30rem;
+  height: 40rem;
   background-color: var(--lightPink);
 
   position: absolute;
   left: 33%;
-  top: 34%;
+  top: 37%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .dreams-you-img {
@@ -124,30 +106,159 @@ footer {
   max-height: 25rem;
 }
 
+.dreams-checkbox-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .checkbox {
-  width: 1.3em;
-  height: 1.3em;
-  background-color: var(--purple);
-  border-radius: 50%;
-  vertical-align: middle;
-  border: .2rem solid var(--yellow);
   appearance: none;
-  outline: none;
-  cursor: pointer;
-  margin: .6rem;
+  width: 6rem;
+  height: 6rem;
+  outline: 0;
+  display: inline-block;
+
+  /* &-wrapper {
+    display: flex;
+    flex-direction: column;
+  } */
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
 }
 
 .checkbox:checked {
-  background-color: var(--yellow);
+  display: inline-block;
 }
 
-.dream-label {
-  color: white;
+.check-Job {
+  background: url(../assets/img/icons/job.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Job:checked {
+  background: url(../assets/img/icons/job-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Kinderen {
+  background: url(../assets/img/icons/kinderen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Kinderen:checked {
+  background: url(../assets/img/icons/kinderen-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huis {
+  background: url(../assets/img/icons/huis.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huis:checked {
+  background: url(../assets/img/icons/huis-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geluk {
+  background: url(../assets/img/icons/geluk.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geluk:checked {
+  background: url(../assets/img/icons/geluk-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geld {
+  background: url(../assets/img/icons/geld.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Geld:checked {
+  background: url(../assets/img/icons/geld-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huisdier {
+  background: url(../assets/img/icons/huisdier.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Huisdier:checked {
+  background: url(../assets/img/icons/huisdier-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Gezondheid {
+  background: url(../assets/img/icons/gezondheid.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Gezondheid:checked {
+  background: url(../assets/img/icons/gezondheid-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Reizen {
+  background: url(../assets/img/icons/reizen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Reizen:checked {
+  background: url(../assets/img/icons/reizen-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Auto {
+  background: url(../assets/img/icons/auto.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Auto:checked {
+  background: url(../assets/img/icons/auto-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Diploma {
+  background: url(../assets/img/icons/diploma.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Diploma:checked {
+  background: url(../assets/img/icons/diploma-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Liefde {
+  background: url(../assets/img/icons/liefde.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Liefde:checked {
+  background: url(../assets/img/icons/liefde-selected.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Trouwen {
+  background: url(../assets/img/icons/trouwen.png) no-repeat;
+  background-size: 6rem;
+}
+
+.check-Trouwen:checked {
+  background: url(../assets/img/icons/trouwen-selected.png) no-repeat;
+  background-size: 6rem;
 }
 
 .submit-dreams {
-  max-width: 30rem;
-  margin: 3rem 0;
+  width: 100%;
+  max-width: 40rem;
   padding: 1.5rem 2.5rem;
   background: var(--yellow);
   cursor: pointer;
@@ -159,10 +270,13 @@ footer {
 }
 
 .card-chosen {
-  width: 75vw;
-  height: 100%;
+  width: 60%;
+  height: 80%;
   position: relative;
-  background-color: var(--yellowBG);
+  align-self: center;
+  background-color: var(--purple);
+  /* border: 3rem solid var(--purple); */
+  /* box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4); */
 }
 
 .card-title {
@@ -172,19 +286,27 @@ footer {
   color: var(--purple);
   font-size: 3rem;
   font-weight: bold;
-  top: 30%;
+  top: 34%;
   left: 8%;
 }
 
 .dreams-title {
   position: absolute;
   top: 11%;
-  right: 32%;
+  left: 42%;
   background-color: var(--lightPink);
   padding: 1rem;
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bold;
   color: var(--purple);
+}
+
+.dreams-title-2 {
+  top: 19%;
+}
+
+.dreams-title-3 {
+  top: 26%;
 }
 
 .dream-img {
@@ -201,8 +323,8 @@ footer {
 
 .dream-item-1 {
   position: absolute;
-  top: 12%;
-  left: 29%;
+  top: 10%;
+  left: 18%;
   width: 24rem;
   height: 18rem;
   background-color: var(--pink);
@@ -211,17 +333,17 @@ footer {
 
 .dream-item-2 {
   position: absolute;
-  top: 13%;
-  right: 19%;
-  background-color: var(--purple);
-  width: 14rem;
-  height: 14rem;
+  top: 11%;
+  right: 22%;
+  background-color: var(--yellow);
+  width: 17rem;
+  height: 17rem;
 }
 
 .dream-item-3 {
   position: absolute;
-  bottom: 42%;
-  left: 8%;
+  bottom: 35%;
+  left: 5%;
   background-color: var(--yellow);
   width: 28rem;
   height: 16rem;
@@ -229,8 +351,8 @@ footer {
 
 .dream-item-4 {
   position: absolute;
-  top: 29%;
-  right: 7%;
+  top: 38%;
+  right: 13%;
   background-color: var(--blue);
   width: 26rem;
   height: 16rem;
@@ -238,8 +360,8 @@ footer {
 
 .dream-item-5 {
   position: absolute;
-  top: 42%;
-  right: 29%;
+  bottom: 20%;
+  right: 17%;
   background-color: var(--reddish);
   width: 19rem;
   height: 15rem;
@@ -250,6 +372,15 @@ footer {
   padding: 0;
   appearance: none;
   outline: 0;
+}
+
+.dreams-options-sex {
+  display: flex;
+  padding: 2rem;
+}
+
+.dreams-options-wrapper {
+  align-items: center;
 }
 
 .female {
@@ -269,18 +400,14 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
-  width: 100px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
   transition: all 100ms ease-in;
   filter: brightness(1.8) grayscale(1) opacity(.7);
 }
 
 .input:hover {
   filter: brightness(1.2) grayscale(.5) opacity(.9);
-}
-
-.sex-section {
-  display: flex;
 }
 
 input[type='radio']:checked {

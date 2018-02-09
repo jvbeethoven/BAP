@@ -6,9 +6,7 @@ import {string, object} from 'prop-types';
 
 const Dream = ({props, chosenDreams}) => {
 
-  const imgSrc = `../assets/img/${props}.png`;
-
-  console.log(chosenDreams);
+  const imgSrc = `../assets/img/dreams/${props}.png`;
   const id = chosenDreams.indexOf(props) + 1;
 
   return (
