@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../components/Card';
 import {
   inject,
   observer,
@@ -16,7 +17,7 @@ const Home = ({store}) => {
       <ul className='home-cards-container'>
     {
       cards.map(c => (
-        <li key={c._id} > {c.message}</li>
+        <Card key={c._id} props={c} />
       ))
     }
   </ul>

@@ -18,10 +18,10 @@ const App = ({location}) => {
       {/* {process.env.NODE_ENV !== `production` ? <DevTools /> : null} */}
 
       <header className='header'>
-        <Link className='header-home' to='/' > {location.pathname === `/add` ? `Terug naar` : ``}  Toekomstmuziek</Link>
+        <Link className='header-home' to='/' > {location.pathname === `/Add` ? `Terug naar het overzicht` : `toekomstmuziek`}</Link>
         <div>
-          <Link className='header-info' to={`/Kinderwens`}>Kinderwens</Link>
-          {location.pathname === `/add` ? `` : <Link className='header-create' to={`/Add`}> Creëer jouw toekomst </Link>}
+          {location.pathname === `/Add` ? `` : <Link className='header-info' to={`/Kinderwens`}>Kinderwens</Link>}
+          {location.pathname === `/Add` ? `` : <Link className='header-create' to={`/Add`}> Creëer jouw toekomst </Link>}
         </div>
       </header>
 
@@ -45,7 +45,7 @@ const App = ({location}) => {
           />
         </Switch>
       </section>
-      {location.pathname === `/add` ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>}
+      {/* {location.pathname === `/Add` ? `` : <footer> Copyright © 2018 Hogeschool Vives. All rights reserved. </footer>} */}
 
     </section>
   );

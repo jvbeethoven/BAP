@@ -68,7 +68,6 @@ class Store {
   }
 
   add = (email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex) => {
-    console.log(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex);
     cardsAPI.create(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex)
       .then(this._add);
   }
