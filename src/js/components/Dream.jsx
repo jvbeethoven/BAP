@@ -16,6 +16,7 @@ const Dream = ({props, chosenDreams}) => {
         alt={props}
         src={imgSrc}
       ></img>
+      <p className='dream-label'>{props}</p>
     </div>
   );
 };

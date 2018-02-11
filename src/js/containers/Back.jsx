@@ -39,7 +39,7 @@ const Back = ({store}) => {
   const handleSubmit = e => {
     e.preventDefault();
     if (email && message && years) {
-      add(email, message, randomMessage, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
+      add(email, message, `test`, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
       finalizeForm(true);
     } else {
       $error.innerHTML = `Oeps, jouw toekomstige ik zal hier niet genoeg mee hebben. Vul het aantal jaren, jouw email adres en boodschap in.`;
@@ -60,33 +60,30 @@ const Back = ({store}) => {
   };
 
   return (
-        <form className='card-back' onSubmit={handleSubmit}>
-          <section className='card-back-container'>
-            <h1 className='card-back-title'>Beste toekomstige ik,</h1>
-              <div className='card-content-years'>
-                <p className='card-content-years-p'>Binnen</p>
-                <input className='card-content-years-input input' type='number' ref={$el => $years = $el} onChange={handleYears} />
-                <p className='card-content-years-p'>jaar ben ik 35 en zou ik graag volgende dingen waargemaakt hebben:</p>
-              </div>
-              <div className='card-content-dreams'>
-                {chosenDreams.map(d => <p className='card-content-dream' key={d}>{d}</p>)}
-              </div>
-              <p className='card-content-information'>{randomMessage}</p>
-              <div className='card-content-message card-content-input-wrap'>
-                <label className='card-content-message-label card-content-label'>Wat zijn jouw volgende stappen om jouw dromen werkelijkheid te maken?</label>
-                <textarea className='card-content-message-input card-content-input input' type='text' ref={$el => $message = $el} onChange={handleMessage} rows='4' cols='50'>
-                </textarea>
-              </div>
-              <div className='card-content-email card-content-input-wrap'>
-                <label className='card-content-email-label card-content-label'>E-mailadres (we houden je toekomstige-ik hiermee op de hoogte!)</label>
-                <input className='card-content-email-input card-content-input input' type='email' ref={$el => $email = $el} onChange={handleEmail} />
-              </div>
-              <h1 className='card-back-title'>Groetjes, je vroegere ik.</h1>
-          </section>
-          <input className='card-back-submit' type='submit' value='Stuur de toekomst in' />
-          {backComplete ? <Redirect to={`/`} /> : ``}
-          <p ref={$el => $error = $el}></p>
+    <section className='card'>
+        <form className='card-chosen' onSubmit={handleSubmit}>
+          <h1>Beste toekomstige ik,</h1>
+          <div className='card-content'>
+            <p>Binnen</p>
+            <input type='number' ref={$el => $years = $el} onChange={handleYears} />
+            <p>jaar ben ik 35 en zou ik graag volgende dingen waargemaakt hebben:</p>
+            {chosenDreams.map(d => <p key={d}>{d}</p>)}
+            <div className='card-content-chosenDreams'></div>
+            <div className='card-content-addedText'>{randomMessage}</div>
+          </div>
+          <div className='card-user-info'>
+            <img className='stamp'></img>
+            <label className='dreams-email-label'>E-mailadres (we houden je toekomstige-ik hiermee op de hoogte!)</label>
+            <input className='dreams-email-input' type='email' ref={$el => $email = $el} onChange={handleEmail} />
+            <label className='dreams-message-label'>Wat zijn jouw volgende stappen om jouw dromen werkelijkheid te maken?</label>
+            <input className='dreams-message-input' type='text' ref={$el => $message = $el} onChange={handleMessage} />
+            <h1>Groetjes, je vroegere ik.</h1>
+            <input className='submit-dreams-form' type='submit' />
+            <p ref={$el => $error = $el}></p>
+          </div>
         </form>
+        {backComplete ? <Redirect to={`/`} /> : ``}
+    </section>
   );
 };
 

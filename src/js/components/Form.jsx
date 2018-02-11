@@ -40,7 +40,7 @@ const Form = ({props, addChosenDreams, chosenDreams}) => {
         defaultChecked={isChecked ? true : false}
       >
       </input>
-      <label className='dreams-label'>{props}</label>
+      <label className='dream-label'>{props}</label>
     </div>
   );
 };
