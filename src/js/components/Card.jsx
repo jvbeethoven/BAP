@@ -9,6 +9,7 @@ const Card = ({props}) => {
   if (props) {
     return (
       <div className='test'>
+        <p>{props.dreamOne}</p>
         {/* <img className={props.dreamOne} />
         <img className={props.dreamTwo} />
         <img className={props.dreamThree} />

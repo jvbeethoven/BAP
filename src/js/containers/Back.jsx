@@ -83,7 +83,7 @@ const Back = ({store}) => {
               </div>
               <h1 className='card-back-title'>Groetjes, je vroegere ik.</h1>
           </section>
-          <input className='submit-dreams-form' type='submit' />
+          <input className='card-back-submit' type='submit' value='Stuur de toekomst in' />
           {backComplete ? <Redirect to={`/`} /> : ``}
           <p ref={$el => $error = $el}></p>
         </form>

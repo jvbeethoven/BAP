@@ -164,10 +164,10 @@ input, textarea {
 }
 
 .card-back-container {
-  width: 75%;
+  width: 65%;
   max-width: 1200px;
   max-width: 120rem;
-  height: 70%;
+  height: 80%;
   position: relative;
   padding: 50px;
   padding: 5rem;
@@ -185,6 +185,20 @@ input, textarea {
   font-size: 36px;
   font-size: 3.6rem;
   font-weight: bold;
+}
+
+.card-back-submit {
+  font-size: 25px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #f28886;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 20px 150px 0 0;
+  margin: 2rem 15rem 0 0;
 }
 
 .card-content {
