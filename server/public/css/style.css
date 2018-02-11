@@ -65,6 +65,7 @@ body {
   font-size: 18px;
   font-size: 1.8rem;
   height: 100vh;
+  color: white;
   /* margin: 2rem; */
 }
 
@@ -131,6 +132,12 @@ footer {
   height: 100vh;
 }
 
+input, textarea {
+  outline: none;
+  border: none;
+  background-color: #3f2bad;
+}
+
 .card {
   width: 100vw;
   height: 94vh;
@@ -141,6 +148,109 @@ footer {
   -ms-flex-align: end;
       align-items: flex-end
   /* background-color: var(--purple); */
+}
+
+.card-back {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.card-back-container {
+  width: 75%;
+  max-width: 1200px;
+  max-width: 120rem;
+  height: 70%;
+  position: relative;
+  padding: 50px;
+  padding: 5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #3f2bad;
+  box-shadow: 0 1rem 2.2rem rgba(63, 43, 173, .35);
+}
+
+.card-back-title {
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.card-content {
+}
+
+.card-content-years {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-content-years-p {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-content-years-input {
+  border-bottom: 2px solid #ffd0ba;
+  border-bottom: .2rem solid #ffd0ba;
+}
+
+.card-content-dreams {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-content-dream {
+  background-color: #ffd0ba;
+  color: #3f2bad;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 3px 10px;
+  padding: .3rem 1rem;
+}
+
+.card-content-information {
+  max-width: 800px;
+  max-width: 80rem;
+  line-height: 25px;
+  line-height: 2.5rem;
+}
+
+.card-content-input-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
+.card-content-input {
+  border: 2px solid #ffd0ba;
+  border: .2rem solid #ffd0ba;
+  max-width: 600px;
+  max-width: 60rem;
+}
+
+.card-content-label {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #ffd0ba;
+  font-weight: bold;
 }
 
 .card-chosen {

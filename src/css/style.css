@@ -9,6 +9,7 @@ body {
   font-family: Jaldi;
   font-size: 1.8rem;
   height: 100vh;
+  color: white;
   /* margin: 2rem; */
 }
 
@@ -59,6 +60,12 @@ footer {
   height: 100vh;
 }
 
+input, textarea {
+  outline: none;
+  border: none;
+  background-color: var(--purple);
+}
+
 .card {
   width: 100vw;
   height: 94vh;
@@ -66,6 +73,84 @@ footer {
   justify-content: space-between;
   align-items: flex-end;
   /* background-color: var(--purple); */
+
+  &-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+
+    &-container {
+      width: 75%;
+      max-width: 120rem;
+      height: 70%;
+      position: relative;
+      padding: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: var(--purple);
+      box-shadow: 0 1rem 2.2rem rgba(63, 43, 173, .35);
+    }
+
+    &-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+    }
+  }
+
+  &-content {
+
+    &-years {
+      display: flex;
+    }
+
+    &-years-p {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    &-years-input {
+      border-bottom: .2rem solid var(--lightPink);
+    }
+
+    &-dreams {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &-dream {
+      background-color: var(--lightPink);
+      color: var(--purple);
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: .3rem 1rem;
+    }
+
+    &-information {
+      max-width: 80rem;
+      line-height: 2.5rem;
+    }
+
+    &-input-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-input {
+      border: .2rem solid var(--lightPink);
+      max-width: 60rem;
+    }
+
+    &-label {
+      font-size: 1.8rem;
+      color: var(--lightPink);
+      font-weight: bold;
+    }
+  }
 
   &-chosen {
     width: 75%;
