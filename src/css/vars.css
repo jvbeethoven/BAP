@@ -1,11 +1,14 @@
 :root {
+  --bg-color: #fafafa;
   --yellow: #ffd516;
-  --pink: #f28886;
-  --lightPink: #ffd0ba;
+  --reddish: #eb5941;
+  --pink: #f61067;
+  --lightPink: #ffd6d9;
   --pinkBG: rgba(241, 125, 174, .1);
   --blue: #6fa6fe;
-  --purple: #3f2bad;
+  --purple: #5603ad;
   --purpleBG: #8367c7;
+  /* --purpleBG: rgba(58, 0, 139, .07); */
   --yellowBG: rgba(255, 213, 22, .1);
   --yellowBG2: rgba(255, 213, 22, .3);
 }
