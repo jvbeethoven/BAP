@@ -39,7 +39,7 @@ const Back = ({store}) => {
   const handleSubmit = e => {
     e.preventDefault();
     if (email && message && years) {
-      add(email, message, `test`, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
+      add(email, message, randomMessage, years, chosenDreams[0], chosenDreams[1], chosenDreams[2], chosenDreams[3], chosenDreams[4], sex);
       finalizeForm(true);
     } else {
       $error.innerHTML = `Oeps, jouw toekomstige ik zal hier niet genoeg mee hebben. Vul het aantal jaren, jouw email adres en boodschap in.`;
@@ -62,7 +62,7 @@ const Back = ({store}) => {
   return (
     <section className='card'>
         <form className='card-chosen' onSubmit={handleSubmit}>
-          <h1>Beste toekomstige ik,</h1>
+          <h1 className='card-back-title'>Beste toekomstige ik,</h1>
           <div className='card-content'>
             <p>Binnen</p>
             <input type='number' ref={$el => $years = $el} onChange={handleYears} />
@@ -77,7 +77,7 @@ const Back = ({store}) => {
             <input className='dreams-email-input' type='email' ref={$el => $email = $el} onChange={handleEmail} />
             <label className='dreams-message-label'>Wat zijn jouw volgende stappen om jouw dromen werkelijkheid te maken?</label>
             <input className='dreams-message-input' type='text' ref={$el => $message = $el} onChange={handleMessage} />
-            <h1>Groetjes, je vroegere ik.</h1>
+            <h1 className='card-back-title'>Groetjes, je vroegere ik.</h1>
             <input className='submit-dreams-form' type='submit' />
             <p ref={$el => $error = $el}></p>
           </div>

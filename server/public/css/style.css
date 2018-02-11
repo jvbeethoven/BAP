@@ -56,12 +56,8 @@ html {
   box-sizing: inherit;
 }
 
-:root {
-  /* --purpleBG: rgba(58, 0, 139, .07); */
-}
-
 html {
-  background-color: #fafafa;
+  background-color: #ffd0ba;
 }
 
 body {
@@ -99,6 +95,30 @@ footer {
       align-items: center;
 }
 
+.header {
+}
+
+.header-home {
+  font-weight: bold;
+  font-size: 23px;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #f28886;
+}
+
+.header-create {
+  min-width: 50px;
+  min-width: 5rem;
+  min-height: 30px;
+  min-height: 3rem;
+  background-color: #ffd516;
+  padding: 20px;
+  padding: 2rem;
+  color: #3f2bad;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -111,67 +131,96 @@ footer {
   height: 100vh;
 }
 
-.header-home {
-  font-weight: bold;
-  font-size: 23px;
-  font-size: 2.3rem;
-  text-decoration: none;
-  color: #eb5941;
-
-}
-
-.header-create {
-  min-width: 50px;
-  min-width: 5rem;
-  min-height: 30px;
-  min-height: 3rem;
-  background-color: #ffd516;
-  padding: 20px;
-  padding: 2rem;
-  color: #5603ad;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .card {
   width: 100vw;
   height: 94vh;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: end;
-      align-items: flex-end;
+      align-items: flex-end
   /* background-color: var(--purple); */
 }
 
-.dreams-options {
-  width: 25vw;
+.card-chosen {
+  width: 75%;
+  height: 70%;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #ffd0ba;
+  box-shadow: 0 1rem 2.2rem rgba(232, 175, 129, .43);
+}
+
+.card-title {
+  position: absolute;
+  padding: 20px 18px;
+  padding: 2rem 1.8rem;
+  color: white;
+  font-size: 82px;
+  font-size: 8.2rem;
+  font-weight: bold;
+  top: 8%;
+  right: 10%;
+}
+
+.card-left {
   height: 100%;
-
+  width: 100%;
   display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 
+.dreams {
+}
+
+.dreams-options {
+  width: 30vw;
+  min-width: 350px;
+  min-width: 35rem;
+  padding: 100px 50px;
+  padding: 10rem 5rem;
+  height: 100vh;
+  background-color: #3f2bad;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 100px 0;
-  padding: 10rem 0;
+  -ms-flex-align: center;
+      align-items: center;
+}
 
+.dreams-options-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .dreams-question {
-  color: #ffd516;
-  font-size: 18px;
-  font-size: 1.8rem;
+  color: white;
+  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
+  text-align: center;
   padding: 20px 0;
   padding: 2rem 0;
-  max-width: 280px;
-  max-width: 28rem;
-  line-height: 20px;
-  line-height: 2rem;
+  max-width: 300px;
+  max-width: 30rem;
+  line-height: 35px;
+  line-height: 3.5rem;
 }
 
 .dreams-you {
@@ -179,14 +228,11 @@ footer {
   width: 30rem;
   height: 400px;
   height: 40rem;
-  background-color: #ffd6d9;
-
+  background-color: #3f2bad;
   position: absolute;
   left: 33%;
   top: 37%;
-
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
@@ -203,6 +249,27 @@ footer {
   max-height: 25rem;
 }
 
+.dreams-you-sex .input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+}
+
+.dreams-you-sex {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  padding: 2rem;
+}
+
 .dreams-checkbox-options {
   display: -ms-flexbox;
   display: flex;
@@ -212,21 +279,45 @@ footer {
       justify-content: space-around;
 }
 
+.dreams-title {
+  position: absolute;
+  top: 11%;
+  left: 42%;
+  background-color: #ffd0ba;
+  padding: 10px;
+  padding: 1rem;
+  font-size: 50px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #3f2bad;
+}
+
+.dreams-title-2 {
+  top: 19%;
+}
+
+.dreams-title-3 {
+  top: 26%;
+}
+
+.dreams-label {
+  color: white;
+  font-size: 14px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  letter-spacing: .1rem;
+}
+
 .checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 60px;
-  width: 6rem;
-  height: 60px;
-  height: 6rem;
+  width: 58px;
+  width: 5.8rem;
+  height: 58px;
+  height: 5.8rem;
   outline: 0;
-  display: inline-block;
-
-  /* &-wrapper {
-    display: flex;
-    flex-direction: column;
-  } */
+  display: inline-block
 }
 
 .checkbox-wrapper {
@@ -246,184 +337,151 @@ footer {
 
 .check-Job {
   background: url(/assets/img/icons/job.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Job:checked {
   background: url(/assets/img/icons/job-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Kinderen {
   background: url(/assets/img/icons/kinderen.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Kinderen:checked {
   background: url(/assets/img/icons/kinderen-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Huis {
   background: url(/assets/img/icons/huis.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Huis:checked {
   background: url(/assets/img/icons/huis-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Geluk {
   background: url(/assets/img/icons/geluk.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Geluk:checked {
   background: url(/assets/img/icons/geluk-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Geld {
   background: url(/assets/img/icons/geld.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Geld:checked {
   background: url(/assets/img/icons/geld-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Huisdier {
   background: url(/assets/img/icons/huisdier.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Huisdier:checked {
   background: url(/assets/img/icons/huisdier-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Gezondheid {
   background: url(/assets/img/icons/gezondheid.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Gezondheid:checked {
   background: url(/assets/img/icons/gezondheid-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Reizen {
   background: url(/assets/img/icons/reizen.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Reizen:checked {
   background: url(/assets/img/icons/reizen-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Auto {
   background: url(/assets/img/icons/auto.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Auto:checked {
   background: url(/assets/img/icons/auto-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Diploma {
   background: url(/assets/img/icons/diploma.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Diploma:checked {
   background: url(/assets/img/icons/diploma-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Liefde {
   background: url(/assets/img/icons/liefde.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Liefde:checked {
   background: url(/assets/img/icons/liefde-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .check-Trouwen {
   background: url(/assets/img/icons/trouwen.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5rem;
+  background-position: center
 }
 
 .check-Trouwen:checked {
   background: url(/assets/img/icons/trouwen-selected.png) no-repeat;
-  background-size: 6rem;
+  background-size: 5.6rem;
 }
 
 .submit-dreams {
-  width: 100%;
-  max-width: 400px;
-  max-width: 40rem;
+  width: 300px;
+  width: 30rem;
   padding: 15px 25px;
   padding: 1.5rem 2.5rem;
-  background: #ffd516;
+  margin: 0 180px 0 0;
+  margin: 0 18rem 0 0;
+  background: #f28886;
   cursor: pointer;
   /* border-radius: 1rem; */
   border: 0 none;
-  color: #5603ad;
-  font-size: 19px;
-  font-size: 1.9rem;
+  color: white;
+  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-.card-chosen {
-  width: 60%;
-  height: 80%;
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  background-color: #5603ad;
-  /* border: 3rem solid var(--purple); */
-  /* box-shadow: 0 0 12.7rem -.7rem rgba(0, 0, 0, .4); */
-}
-
-.card-title {
-  position: absolute;
-  padding: 20px 18px;
-  padding: 2rem 1.8rem;
-  background-color: #ffd6d9;
-  color: #5603ad;
-  font-size: 30px;
-  font-size: 3rem;
-  font-weight: bold;
-  top: 34%;
-  left: 8%;
-}
-
-.dreams-title {
-  position: absolute;
-  top: 11%;
-  left: 42%;
-  background-color: #ffd6d9;
-  padding: 10px;
-  padding: 1rem;
-  font-size: 50px;
-  font-size: 5rem;
-  font-weight: bold;
-  color: #5603ad;
-}
-
-.dreams-title-2 {
-  top: 19%;
-}
-
-.dreams-title-3 {
-  top: 26%;
 }
 
 .dream-img {
@@ -441,48 +499,47 @@ footer {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: center
 }
 
 .dream-item-1 {
   position: absolute;
-  top: 10%;
-  left: 18%;
-  width: 240px;
-  width: 24rem;
+  top: 8%;
+  left: 21%;
+  width: 300px;
+  width: 30rem;
   height: 180px;
   height: 18rem;
-  background-color: #f61067;
-
+  background-color: #3f2bad;
 }
 
 .dream-item-2 {
   position: absolute;
-  top: 11%;
-  right: 22%;
-  background-color: #ffd516;
-  width: 170px;
-  width: 17rem;
-  height: 170px;
-  height: 17rem;
+  top: 37%;
+  left: 7%;
+  background-color: #f28886;
+  width: 260px;
+  width: 26rem;
+  height: 150px;
+  height: 15rem;
 }
 
 .dream-item-3 {
   position: absolute;
-  bottom: 35%;
-  left: 5%;
-  background-color: #ffd516;
-  width: 280px;
-  width: 28rem;
-  height: 160px;
-  height: 16rem;
+  bottom: 17%;
+  left: 10%;
+  background-color: #3f2bad;
+  width: 230px;
+  width: 23rem;
+  height: 150px;
+  height: 15rem;
 }
 
 .dream-item-4 {
   position: absolute;
-  top: 38%;
+  top: 37%;
   right: 13%;
-  background-color: #6fa6fe;
+  background-color: #f28886;
   width: 260px;
   width: 26rem;
   height: 160px;
@@ -491,34 +548,13 @@ footer {
 
 .dream-item-5 {
   position: absolute;
-  bottom: 20%;
-  right: 17%;
-  background-color: #eb5941;
-  width: 190px;
-  width: 19rem;
+  bottom: 16%;
+  right: 16%;
+  background-color: #f28886;
+  width: 230px;
+  width: 23rem;
   height: 150px;
   height: 15rem;
-}
-
-.dreams-options-section .input {
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: 0;
-}
-
-.dreams-options-sex {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20px;
-  padding: 2rem;
-}
-
-.dreams-options-wrapper {
-  -ms-flex-align: center;
-      align-items: center;
 }
 
 .female {
