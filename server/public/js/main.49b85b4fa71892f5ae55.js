@@ -16670,11 +16670,24 @@ var Card = function Card(_ref) {
 
   console.log(props);
   if (props) {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'test', __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      }
-    });
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'test', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        },
+        props.dreamOne
+      )
+    );
   }
 };
 
@@ -17574,7 +17587,7 @@ var url = '/api/cards';
     });
   },
 
-  create: function create(email, message, informationId, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, years, person) {
+  create: function create(email, message, informationId, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, person) {
     var method = 'POST';
     var body = new FormData();
     body.append('email', email);
@@ -17922,7 +17935,6 @@ var Store = (_class = function Store() {
   };
 
   this.add = function (email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex) {
-    console.log(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex);
     __WEBPACK_IMPORTED_MODULE_1__lib_api_cards__["a" /* default */].create(email, message, randomMsg, years, dreamOne, dreamTwo, dreamThree, dreamFour, dreamFive, sex).then(_this._add);
   };
 
@@ -33717,4 +33729,4 @@ module.exports = __webpack_require__(107);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.34dca46b1f689a61f504.js.map
+//# sourceMappingURL=main.49b85b4fa71892f5ae55.js.map
